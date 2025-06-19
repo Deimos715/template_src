@@ -1,0 +1,560 @@
+// Больше 1199px
+@media (min-width: 1199px) {
+    .main-section {
+        &__nav-mobile {
+            display: none;
+        }
+        &__heart-mobile-bottom-left {
+            display: none;
+        }
+
+        &__heart-mobile-top-left {
+            display: none;
+        }
+
+        &__heart-mobile-center-left {
+            display: none;
+        }
+    }
+    .left-wrapper {
+        &__mobile {
+            display: none;
+        }
+    }
+    .right-wrapper__img_mobile {
+        display: none;
+    }
+
+    .slick-slider {
+        display: none !important;
+    }
+
+    .second-section {
+        &__arrows {
+            display: none;
+        }
+    }
+}
+
+// Маленький компьютер или горизонтальный планшет 
+@media (max-width: 1199px) {
+    .container {
+        width: 900px;
+    }
+
+    .main-section {
+        height: 752px;
+        &__nav-mobile {
+            display: none;
+        }
+        &__heart-image-top-left {
+            top: -50px;
+            left: -130px;
+            width: 30%;
+            height: 30%;
+        }
+    
+        &__heart-bottom-right {
+            bottom: -75px;
+        }
+    
+        &__heart-bottom-left {
+            bottom: -77px;
+            left: -100px;
+            width: 40%;
+        }
+
+        &__heart-mobile-bottom-left {
+            display: none;
+        }
+
+        &__heart-mobile-top-left {
+            display: none;
+        }
+
+        &__heart-mobile-center-left {
+            display: none;
+        }
+    }
+
+    .left-wrapper {
+        top: 110px;
+        &__mobile {
+            display: none;
+        }
+    }
+    
+    .right-wrapper__img_pc {
+        bottom: -80px;
+        width: 115%;
+    }
+
+    .right-wrapper__img_mobile {
+        display: none;
+    }
+
+    .slick-slider {
+        display: none !important;
+    }
+
+    .second-section {
+        &__arrows {
+            display: none;
+        }
+    }
+}
+
+// Вертикальный планшет
+@media (max-width: 991px) {
+    .container {
+        width: 720px;
+    }
+
+    .main-section {
+        height: 755px;
+        &__nav-mobile {
+            display: none;
+        }
+        &__heart-image-top-left {
+            left: -80px;
+        }
+        &__heart-image-top-right {
+            top: -20px;
+            right: -55px;
+        }
+        &__heart-bottom-right {
+            width: 40%;
+        }
+        &__heart-bottom-left {
+            left: -65px;
+        }
+        &__heart-mobile-bottom-left {
+            display: none;
+        }
+
+        &__heart-mobile-top-left {
+            display: none;
+        }
+
+        &__heart-mobile-center-left {
+            display: none;
+        }
+    }
+
+    .left-wrapper {
+        top: 110px;
+        &__mobile {
+            display: none;
+        }
+    }
+
+    .title {
+        font-size: 64px;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+
+    .right-wrapper__img_pc {
+        bottom: -80px;
+        width: 136%;
+        right: 70px;
+    }
+
+    .right-wrapper__img_mobile {
+        display: none;
+    }
+
+    .slick-slider {
+        display: none !important;
+    }
+
+    .second-section {
+        &__arrows {
+            display: none;
+        }
+    }
+}
+
+// Горизонтальный телефон
+@media (max-width: 767px) {
+    .container {
+        width: 540px;
+    }
+
+    .nav-menu, .header, .btn {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 50%;
+        height: 100vh;
+        background: $white-color;
+        // z-index: 20;
+        // transition: 0.6s all;
+        &__logo {
+            position: relative;
+            text-align: center;
+            margin-top: 72px;
+            margin-bottom: 57px;
+        }
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        &__list-item {
+            margin-bottom: 31px;
+            &:last-child {
+                margin-right: 0px;
+            }
+            a {
+                color: $black-color;
+            }
+        }
+        &__btn {
+            position: relative;
+            text-align: center;
+        }
+        &__language {
+            position: relative;
+            display: inline-block;
+    
+            &:hover .language-dropdown__content {
+                display: block;
+            }
+        }
+    }
+
+    .sign-in {
+        &__btn {
+            border: 1px solid $black-color;
+            color: $black-color;
+            padding: 9px 52px;
+            margin-bottom: 23px;
+        }
+    }
+
+    .language-dropdown {
+        &__button {
+            color: $black-color;
+        }
+        &__content {
+            background-color: #7780DF;
+        }
+        &__link {
+            color: $white-color;
+    
+            &:hover {
+                background-color: #7780DF;
+            }
+        }
+    }
+
+    .hamburger {
+        width: 30px;
+        position: absolute;
+        top: 40px;
+        right: 45px;
+        height: 27px;
+        z-index: 21;
+        span {
+            height: 5px;
+            width: 100%;
+            display: block;
+            background: $white-color;
+            margin-bottom: 6px;
+            transition: 1s all;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .hamburger_active {
+        position: fixed;
+        span {
+            margin-bottom: -5px;
+            &:nth-child(1) {
+                transform: translateY(3px) rotate(-45deg);
+                background: $black-color;
+            }
+            &:nth-child(2) {
+                display: none;
+            }
+            &:nth-child(3) {
+                transform: translateY(3px) rotate(45deg);
+                color: $black-color;
+                background: $black-color;
+            }
+        }
+    }
+
+    .mobile-menu_active {
+        display: block;
+    }
+
+    .main-section {
+        height: 730px;
+        background: rgb(70,77,194);
+        background: linear-gradient(180deg, rgba(70,77,194,1) 0%, rgba(119,128,223,1) 70%, rgba(255,255,255,1) 100%);
+        margin-bottom: 99px;
+
+        &__content-container {
+            display: flex;
+            position: relative;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__heart-image-top-left {
+            display: none;
+        }
+        &__heart-image-top-right {
+            display: none;
+        }
+        &__heart-bottom-right {
+            display: none;
+        }
+        &__heart-bottom-left {
+            display: none;
+        }
+        &__heart-mobile-bottom-left {
+            display: block;
+            position: absolute;
+            left: -25px;
+            bottom: 0px;
+            z-index: 1;
+        }
+
+        &__heart-mobile-top-left {
+            display: block;
+            position: absolute;
+            left: 75px;
+            top: 270px;
+        }
+
+        &__heart-mobile-center-left {
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 360px;
+        }
+    }
+
+    .left-wrapper {
+        position: relative;
+        top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__title {
+            margin-bottom: 28px;
+        }
+        &__text {
+            margin-bottom: 5px;
+        }
+        &__button {
+            position: relative;
+            top: 310px;
+            z-index: 1;
+        }
+        &__pc {
+            display: none;
+        }
+        &__mobile {
+            display: inline;
+        }
+    }
+
+    .title {
+        font-size: 56px;
+        span {
+            font-size: 22px;
+        }
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .buttons {
+        &__main-btn {
+            padding: 20px 120px;
+        }
+        
+    }
+
+    .right-wrapper__img_pc {
+        display: none;
+    }
+
+    .right-wrapper__img_mobile {
+        display: block;
+        position: relative;
+        bottom: 45px;
+        width: 100%;
+    }
+    .second-section {
+        min-height: 175px;
+        position: relative;
+        box-shadow: 0px -215px 35px rgba(255, 255, 255, 1.5), 0px -214px 20px rgba(119, 128, 223, -0.5);
+        &__cards-box {
+            display: none;
+        }
+    }
+
+    .cards-item {
+        width: 260px;
+        height: 190px;
+        &__title {
+            font-size: 16px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+    }
+
+    .second-section {
+        &__arrows {
+            display: block;
+            position: relative;
+        }
+    }
+
+    //Слайдер
+    .slick-slider {
+        display: block !important;
+    }
+
+    .custom-prev, .custom-next {
+        top: -125px;
+    }
+
+    .custom-prev {
+        left: 9.5% !important;
+        }
+    
+    .custom-next {
+        right: 9.5% !important;
+    }
+
+    .footer-section {
+        &__info-container {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &__info {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__social {
+            align-items: center;
+        }
+    }
+
+    .info-menu {
+        &__left-wrapper {
+            margin-right: 50px;
+            margin-bottom: 26px;
+        }
+        &__right-wrapper {
+            margin-bottom: 42px;
+        }
+    }
+    .social-menu {
+        margin-bottom: 150px;
+        &__brand {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+// Вертикальный телефон
+@media (max-width: 575px) {
+    .container {
+        width: 90%;
+    }
+
+    .main-section {
+        &__heart-mobile-bottom-left {
+            left: -80px;
+        }
+
+        &__heart-mobile-top-left {
+            left: 20px;
+        }
+
+        &__heart-mobile-center-left {
+            right: -15px;
+        }
+    }
+
+    .left-wrapper {
+        img {
+            position: absolute;
+            top: -50px;
+            right: -20px;
+            transform: rotate(-12.67deg);
+        }
+    }
+
+    .cards-item {
+        width: 260px;
+        height: 290px;
+    }
+
+    //Слайдер
+    .custom-prev, .custom-next {
+        top: -160px !important;
+    }
+
+}
+
+/* Для устройств шириной 425px и меньше */
+@media (max-width: 425px) {
+    .main-section {
+        height: 735px;
+    }
+    .second-section {
+        box-shadow: 0px -240px 35px rgba(255, 255, 255, 1.5), 0px -214px 20px rgba(119, 128, 223, -0.5);
+    }
+    .hamburger {
+        top: 32px;
+        right: 36px;
+
+    }
+    .left-wrapper {
+        img {
+            top: -50px;
+            right: 10px;
+        }
+    }
+    .title {
+        font-size: 46px;
+        text-align: center;
+        span {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: -30px;
+        }
+    }
+    .text {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    //Слайдер
+    .custom-prev {
+        left: 13.5% !important;
+    }
+    
+    .custom-next {
+        right: 13.5% !important;
+    }
+}

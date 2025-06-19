@@ -1,0 +1,11 @@
+$dev-mode: true;
+$img-path: if($dev-mode, '/src/img/', '/assets/img/');
+
+// Font Family
+$font-title: 'Source Serif Pro', sans-serif;
+$font-body: 'Inter', sans-serif;
+
+//Colors
+$base-color: #FFFFFF;
+$first-color:#347854;
+$line-color:#F8EDD9;

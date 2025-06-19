@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Inter";
+    src: local("RInter");
+    src: url("../fonts/Inter_Regular.woff2") format("woff2"),
+        url("../fonts/Inter_Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: local("RInter");
+    src: url("../fonts/Inter_Bold.woff2") format("woff2"),
+        url("../fonts/Inter_Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto");
+    src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+        url("../fonts/Roboto-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto");
+    src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+        url("../fonts/Roboto-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Philosopher";
+    src: local("Philosopher");
+    src: url("../fonts/Philosopher-Regular.woff2") format("woff2"),
+        url("../fonts/Philosopher-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,33 @@
+.slick-slide {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.slick-slide {
+    transition: all 0.4s ease;
+}
+
+// .slick-center {
+//     transform: scale(0.9); /* Уменьшаем центральный слайд */
+//     z-index: 1;
+// }
+
+.slick-slide:not(.slick-center) {
+    // transform: scale(1.1); /* Увеличиваем боковые слайды */
+    opacity: 0.6;
+    filter: grayscale(100%);
+}
+
+.custom-prev, .custom-next {
+    font-size: 24px;
+    color: $black-color;
+    border: none;
+    background: transparent;
+    position: absolute;
+    // top: -170px;
+    transform: translateY(-50%);
+    // z-index: 2;
+}
+
+
+

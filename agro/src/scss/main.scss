@@ -1,0 +1,59 @@
+/*
+* Connecting SCSS sources Bootstrap 5
+*/
+
+// @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+/*
+* Импортируем функции, переменные, сетку grid Bootstrap, Accardion, Alert
+*/
+// @import "../../node_modules/bootstrap/scss/functions";
+// @import "../../node_modules/bootstrap/scss/variables";
+// @import "../../node_modules/bootstrap/scss/maps";
+// @import "../../node_modules/bootstrap/scss/mixins";
+// @import "../../node_modules/bootstrap/scss/root";
+// @import "../../node_modules/bootstrap/scss/transitions";
+
+//Грид
+// @import "../../node_modules/bootstrap/scss/grid";
+
+// Импортирвем Accordion
+// @import "../../node_modules/bootstrap/scss/accordion";
+
+//Alert
+// @import "../../node_modules/bootstrap/scss/alert";
+// @import "../../node_modules/bootstrap/scss/close";
+// @import "../../node_modules/bootstrap/scss/buttons";
+
+
+/*
+* Connecting SCSS sources normalize-css
+*/
+
+@import "normalize/normalize.scss";
+
+
+/*
+* Connecting SCSS sources reset-css
+*/
+
+@import "reset/reset.scss";
+
+
+/*
+* Connecting CSS Fontawesome
+*/
+// @import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+
+
+/*
+* fonts
+*/
+@import "fonts/fonts.scss";
+
+
+/*
+* my scss
+*/
+@import "style/style.scss";

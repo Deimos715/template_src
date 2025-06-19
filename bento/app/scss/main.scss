@@ -1,0 +1,24 @@
+/*
+* Connecting SCSS sources normalize-css
+*/
+
+@use "normalize/normalize.scss" as *;
+
+
+/*
+* Connecting SCSS sources reset-css
+*/
+
+@use "reset/reset.scss" as *;
+
+
+/*
+* fonts
+*/
+@use "fonts/fonts.scss" as *;
+
+
+/*
+* my scss
+*/
+@use "style/style.scss" as *;

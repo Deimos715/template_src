@@ -1,0 +1,529 @@
+@use "variables" as *;
+
+// Маленький компьютер или горизонтальный планшет
+@media (max-width: 1199px) {
+    .container {
+        width: 960px;
+    }
+
+    .main-section {
+        min-height: 625px;
+        &__first-elipse {
+            right: 10px;
+        }
+
+        &__second-elipse {
+            top: 530px;
+        }
+    }
+
+    .left-wrapper {
+        img {
+            width: 750px;
+        }
+
+        &__rectangle-blue {
+            width: 500px;
+            height: 200px;
+        }
+
+        &__rectangle-orange {
+            width: 550px;
+            height: 200px;
+        }
+
+        &__rectangle-grey {
+            width: 500px;
+            height: 200px;
+        }
+    }
+
+    .right_wrapper {
+        right: 20px;
+    }
+
+    .second-section {
+        min-height: 600px;
+
+        &__card-box {
+            display: flex;
+        }
+
+        &__cards-item {
+            margin-right: 20px;
+        }
+    }
+
+    .cards-item {
+        width: 300px;
+        height: 300px;
+
+        &__img {
+            height: 270px;
+        }
+
+        &__text {
+            font-size: 30px;
+            top: 127px;
+        }
+    }
+
+    .icons-item {
+        &__img {
+            margin-right: 10px;
+        }
+    }
+
+    .third-section {
+        &__container {
+            padding-left: 40px;
+        }
+
+        &__right-wrapper {
+            max-width: 450px;
+        }
+    }
+}
+
+// Вертикальный планшет
+@media (max-width: 991px) {
+    .container {
+        width: 720px;
+    }
+
+    .main-section {
+        min-height: 470px;
+
+        &__first-elipse {
+            top: 70px;
+        }
+
+        &__second-elipse {
+            top: 380px;
+        }
+    }
+
+    .left-wrapper {
+        img {
+            width: 550px;
+        }
+
+        &__rectangle-blue {
+            width: 380px;
+            height: 130px;
+        }
+
+        &__rectangle-orange {
+            width: 410px;
+            height: 130px;
+        }
+
+        &__rectangle-grey {
+            width: 380px;
+            height: 130px;
+        }
+    }
+
+    .right_wrapper {
+        width: 300px;
+        top: 75px;
+
+        &__text {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .title {
+        font-size: 60px;
+
+        &__hr_top {
+            bottom: 60px;
+        }
+    }
+
+    .buttons {
+        &__main-btn {
+            font-size: 14px;
+            margin-right: 10px;
+            width: 160px;
+            height: 50px;
+        }
+
+        &__icon-btn {
+            font-size: 14px;
+        }
+    }
+
+    .elipse {
+        width: 150px;
+        height: 150px;
+
+        &__subtract {
+            width: 110px;
+            height: 110px;
+        }
+
+        &__subtract_big {
+            width: 170px;
+            height: 170px;
+        }
+    }
+
+    .elipse_big {
+        width: 250px;
+        height: 250px;
+    }
+
+    .second-section {
+        min-height: 450px;
+
+        &__title {
+            margin-bottom: 25px;
+        }
+
+        &__card-box {
+            margin-bottom: 10px;
+        }
+
+        &__first-elipse {
+            right: -35px;
+        }
+
+        &__second-elipse {
+            top: 262px;
+            left: -35px;
+        }
+
+        &__cards-item {
+        }
+    }
+
+    .cards-item {
+        width: 220px;
+        height: 220px;
+
+        &__img {
+            height: 200px;
+        }
+
+        &__text {
+            font-size: 22px;
+            top: 92px;
+            right: -75px;
+        }
+    }
+
+    .icons-item {
+        &__text {
+            font-size: 14px;
+
+            span {
+                font-size: 30px;
+            }
+        }
+
+        &__img {
+            width: 50px;
+        }
+    }
+
+    .third-section {
+        min-height: 530px;
+        &__container {
+            justify-content: flex-start;
+            padding-left: 20px;
+        }
+
+        &__left-title {
+            display: none;
+        }
+
+        &__right-title {
+            margin-bottom: 10px;
+        }
+
+        &__right-wrapper {
+            max-width: 600px;
+        }
+    }
+
+    .footer {
+        &__container {
+            min-height: 210px;
+        }
+
+        &__img {
+            width: 500px;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+// Горизонтальный телефон
+@media (max-width: 767px) {
+    .container {
+        width: 540px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 50%;
+        background: linear-gradient(
+            360deg,
+            rgba(255, 255, 255, 0.9) 0%,
+            rgba(255, 255, 255, 1) 100%
+        );
+        z-index: 20;
+        transition: 0.6s all;
+        &__list {
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100%;
+            margin-top: 45px;
+        }
+        &__list-item {
+            margin: 31px 0;
+            font-size: 20px;
+        }
+    }
+
+    .hamburger {
+        width: 30px;
+        height: 14px; // 2 margin-bottom по 4px и 3 height по 2px = 14px
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        z-index: 21;
+
+        span {
+            height: 2px;
+            width: 100%;
+            display: block;
+            background: $hamburger-color;
+            margin-bottom: 4px;
+            transition: 1s all;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .hamburger_active {
+        position: fixed;
+
+        span {
+            margin-bottom: -2px;
+            &:nth-child(1) {
+                transform: translateY(3px) rotate(-45deg);
+            }
+            &:nth-child(2) {
+                display: none;
+            }
+            &:nth-child(3) {
+                transform: translateY(3px) rotate(45deg);
+            }
+        }
+    }
+
+    .nav-menu_active {
+        right: 0;
+    }
+
+    .left-wrapper {
+        img {
+            display: none;
+        }
+
+        &__rectangle-blue {
+            width: 380px;
+            height: 130px;
+        }
+
+        &__rectangle-orange {
+            width: 410px;
+            height: 130px;
+        }
+
+        &__rectangle-grey {
+            width: 380px;
+            height: 130px;
+        }
+    }
+
+    .right_wrapper {
+        top: 160px;
+        left: 140px;
+        z-index: 3;
+    }
+
+    .cards-item {
+        width: 180px;
+        height: 180px;
+
+        &__img {
+            height: 160px;
+        }
+
+        &__text {
+            font-size: 18px;
+            top: 80px;
+            right: -95px;
+        }
+    }
+
+    .icons-item {
+        &__text {
+            font-size: 14px;
+
+            span {
+                font-size: 30px;
+            }
+        }
+
+        &__img {
+            width: 50px;
+        }
+    }
+
+    .second-section {
+        &__icons-box {
+            flex-wrap: wrap;
+        }
+
+        &__icons-item {
+            justify-content: center;
+            flex: 0 0 50%;
+        }
+
+        &__second-elipse {
+            top: 250px;
+            left: -90px;
+        }
+    }
+
+    .footer {
+        &__container {
+            display: flex;
+            justify-content: center;
+        }
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__img {
+            display: none;
+        }
+    }
+}
+
+// Вертикальный телефон
+@media (max-width: 575px) {
+    .container {
+        width: 100%;
+    }
+
+    .hamburger {
+        right: 10px;
+    }
+
+    .right_wrapper {
+        left: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second-section {
+        &__card-box {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__cards-item {
+            margin-right: 20px;
+            width: 300px;
+            height: 300px;
+        }
+
+        &__icons-box {
+            margin-bottom: 50px;
+        }
+    }
+
+    .cards-item {
+        margin-right: 0;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &__img {
+            height: 265px;
+        }
+
+        &__text {
+            width: 280px;
+            font-size: 36px;
+            text-align: center;
+            transform: rotate(90deg);
+            position: absolute;
+            top: 120px;
+            right: -80px;
+        }
+    }
+
+    .third-section {
+        &__button {
+            margin-bottom: 50px;
+        }
+    }
+
+    .footer {
+        margin-bottom: 20px;
+        &__title {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+
+    .title {
+        &__hr_top {
+            bottom: 110px;
+        }
+    }
+}
+
+// Для устройств шириной 425px и меньше
+@media (max-width: 425px) {
+    .title {
+        font-size: 50px;
+        &__hr {
+            display: none;
+        }
+        &__hr_top {
+            display: none;
+        }
+    }
+
+    .right_wrapper {
+        left: 10px;
+    }
+
+    .second-section {
+        &__icons-item {
+            flex: 0 0 100%;
+        }
+    }
+}

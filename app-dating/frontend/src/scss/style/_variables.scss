@@ -1,0 +1,28 @@
+$dev-mode: true;
+$img-path: if($dev-mode, '/src/img/', '/assets/img/');
+
+// Font Family
+$font-title: 'Druk', sans-serif;
+$font-body: 'Gilroy', sans-serif;
+$font-text: 'Jost', sans-serif;
+$font-text-bold: 'GilroyBold', sans-serif;
+$font-text-heavy: 'GilroyHeavy', sans-serif;
+
+
+// Theme Color 
+$white-color:#ffffff; //используется
+$black-color: #000000; //используется
+$btn-color: #FF1900; //используется
+$btn-color-hover: #075AB3; //используется
+
+//font-size
+$f-s-h1: 34px;
+$f-s-h2: 30px;
+$f-s-h3: 26px;
+$f-s-h4: 22px;
+$f-s-h5: 18px;
+$f-s-h6: 16px;
+$f-s-p: 16px;
+
+//border-raduis
+$rd-sm-round:15px; //используется

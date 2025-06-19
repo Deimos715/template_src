@@ -1,0 +1,205 @@
+@use "variables" as *;
+
+/* -----------------------------------------------
+				CSS Styles 
+--------------------------------------------------
+
+    Template Name: 
+    
+--------------------------------------------------
+
+Table of Content
+
+    - Global
+
+
+
+----------------------------------- */
+
+/* -----------------------------------
+		Global
+----------------------------------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: $font-body;
+}
+
+body {
+    background-color: $bg-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* -----------------------------------
+		Header
+----------------------------------- */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* -----------------------------------
+		Navigation
+----------------------------------- */
+nav {
+    margin-bottom: 20px;
+
+    ul {
+        text-align: center;
+
+        li {
+            display: inline;
+            margin-right: 100px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                text-transform: uppercase;
+                color: $text-color;
+                font-size: 18px;
+
+                &:hover {
+                    color: $text-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+/* -----------------------------------
+		Main
+----------------------------------- */
+.section-about {
+    height: 640px;
+    background: url("../images/background-img.jpg") center / cover, no-repeat;
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+
+    &__block {
+        width: 420px;
+        height: 190px;
+        background: linear-gradient(
+            180deg,
+            rgba(244, 213, 178, 0.8) 0%,
+            rgba(234, 156, 65, 0.8) 100%
+        );
+        position: absolute;
+        top: 54%; // 349/640*100=54.53%
+        left: 50%; // 730-1440*100=50.69%
+        padding-top: 15px; // (190-160) / 2 = 15px
+    }
+
+    &__border {
+        width: 390px;
+        height: 160px;
+        border: 1px solid $border-color;
+        margin: 0 auto;
+        padding: 17px 14px;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 36px;
+        margin: 0;
+        margin-bottom: 9px;
+        font-family: $font-title;
+    }
+    &__text {
+        font-size: 12px;
+        margin: 0;
+    }
+}
+
+.section-description {
+    margin-bottom: 20px;
+
+    &__icon-box {
+        text-align: center;
+        margin-bottom: 20px;
+
+        img {
+            margin-right: 76px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 96px;
+        text-align: center;
+        font-family: $font-title;
+    }
+
+    .red {
+        color: $span-color;
+    }
+
+    &__text {
+        font-size: 18px;
+        text-align: center;
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+.section-map {
+    margin-bottom: 20px;
+
+    &__titlte {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 20px;
+        font-family: $font-title;
+    }
+
+    &__iframe-map {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.footer {
+    height: 80px;
+    &__line {
+        height: 1px;
+        background-color: #999999;
+        width: 1024px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+/* -----------------------------------
+		Footer
+----------------------------------- */
