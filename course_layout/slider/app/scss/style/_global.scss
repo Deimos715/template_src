@@ -1,0 +1,90 @@
+@use 'variables' as *;
+
+/* -----------------------------------------------
+				CSS Styles 
+--------------------------------------------------
+
+    Template Name: 
+    
+--------------------------------------------------
+
+Table of Content
+
+    - Global
+
+
+
+----------------------------------- */
+
+/* -----------------------------------
+		Global
+----------------------------------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header-section {
+    background-color: #F0F0F0;
+
+    &__nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 69px;
+        align-items: center;
+    }
+}
+
+.nav-menu {
+    &__list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__list-item {
+        margin-right: 64px;
+        font-size: 18px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+// button {
+//     background-color: transparent;
+//     border: none;
+//     font-family: inherit;
+//     cursor: pointer;
+// }
+
+
+/* -----------------------------------
+		Header
+----------------------------------- */
+
+/* -----------------------------------
+		Main
+----------------------------------- */
+
+/* -----------------------------------
+		Footer
+----------------------------------- */
+
+
