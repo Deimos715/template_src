@@ -8263,7 +8263,7 @@
 * Connecting SCSS sources Bootstrap 5
 */
 /*!
- * Bootstrap  v5.3.7 (https://getbootstrap.com/)
+ * Bootstrap  v5.3.6 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
@@ -21764,7 +21764,7 @@ html {
   border-color: #e65c00;
 }
 .main-section .carousel .carousel-inner .carousel-item img {
-  height: 900px;
+  height: 850px;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-filter: brightness(40%);
@@ -21784,6 +21784,13 @@ html {
 }
 .main-section .carousel .carousel-indicators .active {
   background-color: #fff;
+}
+
+/* -----------------------------------
+		Second section
+----------------------------------- */
+.second-section {
+  padding-top: 20px;
 }
 
 /* -----------------------------------
