@@ -8263,7 +8263,7 @@
 * Connecting SCSS sources Bootstrap 5
 */
 /*!
- * Bootstrap  v5.3.6 (https://getbootstrap.com/)
+ * Bootstrap  v5.3.7 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
@@ -21702,13 +21702,6 @@ Table of Content
 /* -----------------------------------
 		Global
 ----------------------------------- */
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 a {
   text-decoration: none;
 }
@@ -21717,76 +21710,82 @@ html {
   scroll-behavior: smooth;
 }
 
-.container {
-  max-width: 1220px;
-  padding: 0 10px;
-  margin: 0 auto;
-}
-
 .header-section {
-  background-color: #F0F0F0;
-}
-.header-section__nav-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 69px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav-menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-.nav-menu__list-item {
-  margin-right: 64px;
-  font-size: 18px;
-}
-.nav-menu__list-item:last-child {
-  margin-right: 0;
+  background-color: #f0f0f0;
 }
 
 /* -----------------------------------
 		Header
 ----------------------------------- */
+.header-section {
+  position: relative;
+  z-index: 10;
+}
+.header-section .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent !important;
+}
+.header-section .navbar-brand,
+.header-section .nav-link,
+.header-section .navbar-toggler,
+.header-section .btn {
+  color: #fff;
+  border-color: #fff;
+}
+.header-section .nav-link.active {
+  color: #fff;
+}
+
 /* -----------------------------------
 		Main
 ----------------------------------- */
+.main-section .carousel .carousel-inner .carousel-item {
+  position: relative;
+}
+.main-section .carousel .carousel-inner .carousel-item .content {
+  position: absolute;
+  max-width: 900px;
+  left: 13%;
+  bottom: 20%;
+  z-index: 2;
+  color: #fff;
+}
+.main-section .carousel .carousel-inner .carousel-item .content .btn-orange {
+  background-color: #ff6600; /* твой цвет */
+  border-color: #ff6600;
+  color: #fff;
+}
+.main-section .carousel .carousel-inner .carousel-item .content .btn-orange:hover {
+  background-color: #e65c00;
+  border-color: #e65c00;
+}
+.main-section .carousel .carousel-inner .carousel-item img {
+  height: 900px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+.main-section .carousel .carousel-control-prev i,
+.main-section .carousel .carousel-control-next i {
+  font-size: 34px;
+}
+.main-section .carousel .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 50%;
+  margin: 5px;
+}
+.main-section .carousel .carousel-indicators .active {
+  background-color: #fff;
+}
+
 /* -----------------------------------
 		Footer
 ----------------------------------- */
-@media (max-width: 1199px) {
-  .container {
-    width: 960px;
-  }
-}
-@media (max-width: 991px) {
-  .container {
-    width: 720px;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    width: 540px;
-  }
-}
-@media (max-width: 575px) {
-  .container {
-    width: 90%;
-  }
-}
-/* Для устройств шириной 425px и меньше */

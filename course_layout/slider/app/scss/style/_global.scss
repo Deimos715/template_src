@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use "variables" as *;
 
 /* -----------------------------------------------
 				CSS Styles 
@@ -19,12 +19,6 @@ Table of Content
 /* -----------------------------------
 		Global
 ----------------------------------- */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 a {
     text-decoration: none;
 }
@@ -33,38 +27,8 @@ html {
     scroll-behavior: smooth;
 }
 
-.container {
-    max-width: 1220px;
-    padding: 0 10px;
-    margin: 0 auto;
-}
-
 .header-section {
-    background-color: #F0F0F0;
-
-    &__nav-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        height: 69px;
-        align-items: center;
-    }
-}
-
-.nav-menu {
-    &__list {
-        display: flex;
-        flex-direction: row;
-    }
-
-    &__list-item {
-        margin-right: 64px;
-        font-size: 18px;
-
-        &:last-child {
-            margin-right: 0;
-        }
-    }
+    background-color: #f0f0f0;
 }
 
 // button {
@@ -74,17 +38,103 @@ html {
 //     cursor: pointer;
 // }
 
-
 /* -----------------------------------
 		Header
 ----------------------------------- */
+.header-section {
+    position: relative;
+    z-index: 10;
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: transparent !important;
+    }
+
+    .navbar-brand,
+    .nav-link,
+    .navbar-toggler,
+    .btn {
+        color: #fff;
+        border-color: #fff;
+    }
+
+    .nav-link.active {
+        color: #fff;
+    }
+}
 
 /* -----------------------------------
 		Main
 ----------------------------------- */
+.main-section {
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                position: relative;
+
+                .content {
+                    position: absolute;
+                    max-width: 900px;
+                    left: 13%;
+                    bottom: 20%;
+                    z-index: 2;
+                    color: #fff;
+
+                    .btn-orange {
+                        background-color: #ff6600; /* твой цвет */
+                        border-color: #ff6600;
+                        color: #fff;
+
+                        &:hover {
+                            background-color: #e65c00;
+                            border-color: #e65c00;
+                        }
+                    }
+                }
+
+                // .overlay {
+                //     width: 100%;
+                //     height: 100%;
+                //     position: absolute;
+                //     background: #000;
+                //     opacity: 0.4;
+                // }
+
+                img {
+                    height: 900px;
+                    object-fit: cover;
+                    filter: brightness(40%);
+                }
+            }
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            i {
+                font-size: 34px;
+            }
+        }
+
+        .carousel-indicators {
+            button {
+                width: 15px;
+                height: 15px;
+                background-color: #ccc;
+                border: none;
+                border-radius: 50%;
+                margin: 5px;
+            }
+
+            .active {
+                background-color: #fff;
+            }
+        }
+    }
+}
 
 /* -----------------------------------
 		Footer
 ----------------------------------- */
-
-
