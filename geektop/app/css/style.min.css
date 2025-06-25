@@ -21663,6 +21663,9 @@ textarea.form-control-lg {
   }
 }
 /*
+* Импортируем функции, переменные, сетку grid Bootstrap, Accardion, Alert
+*/
+/*
 * fonts
 */
 @font-face {
@@ -21727,26 +21730,98 @@ textarea.form-control-lg {
 Table of Content
 
     - Global
-
-
-
+    - Header
+    - Main
+    - Footer
 ----------------------------------- */
 /* -----------------------------------
 		Global
 ----------------------------------- */
-a {
-  text-decoration: none;
+::-webkit-input-placeholder {
+  color: #666;
+}
+::-moz-placeholder {
+  color: #666;
+}
+:-ms-input-placeholder {
+  color: #666;
+}
+::-ms-input-placeholder {
+  color: #666;
+}
+::placeholder {
+  color: #666;
 }
 
-html {
-  scroll-behavior: smooth;
+::-moz-selection {
+  background-color: #ec1c1c;
+  color: #fff;
+}
+
+::selection {
+  background-color: #ec1c1c;
+  color: #fff;
+}
+
+body {
+  font-size: 18px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.5;
   font-family: "Roboto_g", sans-serif;
-  font-weight: 400;
+  overflow-x: hidden;
+  color: #333;
+}
+body input,
+body textarea {
+  border: #666 1px solid;
+  outline: none;
+}
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  border-color: red;
+}
+body input:required:valid,
+body textarea:required:valid {
+  border-color: green;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.img-responsive.img-width {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+a {
+  color: #ec1c1c;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #ec1c1c;
 }
 
 /* -----------------------------------
+		Main
+----------------------------------- */
+/* -----------------------------------
 		Header
 ----------------------------------- */
+.top-line {
+  background-color: #202222;
+}
+
 /* -----------------------------------
 		Main
 ----------------------------------- */
