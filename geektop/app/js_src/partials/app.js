@@ -1,7 +1,8 @@
-console.log("30");
+$(function () {
 
-if (window.jQuery) {
-    console.log("jQuery загружен");
-} else {
-    console.log("jQuery не загружен");
-}
+    $('.logo-litera').each(function () {
+        var ths = $(this);
+        ths.html(ths.html().replace('O', '<span>O</span>'));
+    });
+
+});

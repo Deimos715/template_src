@@ -21820,6 +21820,26 @@ a:hover, a:focus {
 ----------------------------------- */
 .top-line {
   background-color: #202222;
+  position: relative;
+  height: 65px;
+}
+
+.logo {
+  font-family: "Baron_g", sans-serif;
+  font-weight: 800;
+  color: #fff;
+  font-size: 23px;
+  display: inline-block;
+  position: absolute;
+  padding-left: 30px;
+  left: 0;
+  line-height: 65px;
+}
+.logo:hover, .logo:focus {
+  color: #fff;
+}
+.logo span {
+  color: #ec1c1c;
 }
 
 /* -----------------------------------

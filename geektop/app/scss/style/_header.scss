@@ -4,10 +4,32 @@
 		Header
 ----------------------------------- */
 .top-line {
-	background-color: $dark;
+    background-color: $dark;
+    position: relative;
+    height: 65px;
 }
+
 .logo {
+    font-family: $second-font;
+    font-weight: 800;
+    color: #fff;
+    font-size: 23px;
+    display: inline-block;
+    position: absolute;
+    padding-left: 30px;
+    left: 0;
+    line-height: 65px;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+    }
+
+    span {
+        color: $accent;
+    }
 }
+
 .logo-litera {
 }
 .search-wrap {
