@@ -60,7 +60,7 @@
         width: 100%;
         border-top: lighten($dark, 5%) 1px solid;
         z-index: 4;
-		display: none;
+        display: none;
         input[type="text"] {
             width: 100%;
             padding: 8px 15px;
@@ -120,7 +120,7 @@
     a {
         color: #d1d9e0;
         text-transform: uppercase;
-        font-style: 16px;
+        font-size: 16px;
         font-weight: 700;
         padding: 0 15px;
         line-height: 65px;
@@ -131,4 +131,38 @@
 .top-menu {
 }
 .active {
+}
+
+.mobile-menu {
+    display: none;
+    background-color: lighten($dark, 3%);
+    border-top: lighten($dark, 5%) 1px solid;
+
+    .top-menu {
+        display: block;
+    }
+
+    li {
+        display: block;
+
+        a {
+            padding: 0;
+            line-height: 45px;
+        }
+    }
+}
+
+.mobile-menu-button {
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    line-height: 65px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: none;
+    white-space: nowrap;
+    &:hover {
+        color: $accent;
+    }
 }

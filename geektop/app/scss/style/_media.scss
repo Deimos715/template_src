@@ -1,0 +1,64 @@
+@import "variables";
+
+/*==========  Desktop First (от большего к меньшему) ==========*/
+
+// ≤1200px — Маленькие десктопы и планшеты в горизонтали
+// Bootstrap breakpoint: down(xl)
+// Контейнер: 960px
+@include media-breakpoint-down(xl) {
+}
+
+// ≤992px — Планшеты вертикально
+// Bootstrap breakpoint: down(lg)
+// Контейнер: 720px
+@include media-breakpoint-down(lg) {
+    .main-menu {
+        display: none;
+        padding: 20px;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+}
+
+// ≤768px — Горизонтальные телефоны и узкие планшеты
+// Bootstrap breakpoint: down(md)
+// Контейнер: 540px
+@include media-breakpoint-down(md) {
+}
+
+// ≤576px — Вертикальные телефоны
+// Bootstrap breakpoint: down(sm)
+// Контейнер: 100% или адаптивный
+@include media-breakpoint-down(sm) {
+}
+
+/*==========  Mobile First (от меньшего к большему) ==========*/
+
+// ≥576px — Телефоны в горизонтали и выше
+// Bootstrap breakpoint: up(sm)
+// Контейнер: 540px
+@include media-breakpoint-up(sm) {
+}
+
+// ≥768px — Планшеты и выше
+// Bootstrap breakpoint: up(md)
+// Контейнер: 720px
+@include media-breakpoint-up(md) {
+}
+
+// ≥992px — Десктопы и ноутбуки
+// Bootstrap breakpoint: up(lg)
+// Контейнер: 960px
+@include media-breakpoint-up(lg) {
+    .mobile-menu {
+        display: none !important;
+    }
+}
+
+// ≥1200px — Широкие экраны (большие десктопы и выше)
+// Bootstrap breakpoint: up(xl)
+// Контейнер: 1140px
+@include media-breakpoint-up(xl) {
+}

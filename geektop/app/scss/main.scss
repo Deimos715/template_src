@@ -6,48 +6,78 @@
 /*
 * Connecting SCSS sources normalize-css
 */
-
 // @use "normalize/normalize.scss" as *;
 
 /*
 * Connecting SCSS sources reset-css
 */
-
 // @use "reset/reset.scss" as *;
 
 /*
 * Connecting SCSS sources Bootstrap 5
 */
-
-@use "../../node_modules/bootstrap/scss/bootstrap.scss" as *;
+// @use "../../node_modules/bootstrap/scss/bootstrap.scss" as *;
 
 /*
-* Импортируем функции, переменные, сетку grid Bootstrap, Accardion, Alert
+* Импортируем функции, переменные, сетку grid Bootstrap, Reboot, Accardion, Alert. Нужно расскоментировать.
 */
-// @import "../../node_modules/bootstrap/scss/functions";
-// @import "../../node_modules/bootstrap/scss/variables";
-// @import "../../node_modules/bootstrap/scss/maps";
-// @import "../../node_modules/bootstrap/scss/mixins";
-// @import "../../node_modules/bootstrap/scss/root";
+// Функции Sass, используемые в переменных и картах Bootstrap
+@import "../../node_modules/bootstrap/scss/functions";
+
+// Все переменные Bootstrap ($primary, $font-family-base, $grid-breakpoints и т.д.)
+@import "../../node_modules/bootstrap/scss/variables";
+
+// Карты значений, такие как цветовые палитры, breakpoint-карты и др.
+@import "../../node_modules/bootstrap/scss/maps";
+
+// Миксины: breakpoints, clearfix, visually-hidden и т.п.
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Root-level переменные CSS (`:root { --bs-primary: #... }`) и базовая настройка
+@import "../../node_modules/bootstrap/scss/root";
+
+// Reset и нормализация браузерных стилей (box-sizing, margin, base font, и т.д.)
+// Это Bootstrap-альтернатива normalize.css и reset.css, их подключать не нужно
+@import "../../node_modules/bootstrap/scss/reboot";
+
+// (Опционально) Стили для CSS-переходов (.fade, .collapse и др.)
 // @import "../../node_modules/bootstrap/scss/transitions";
 
-//Грид
-// @import "../../node_modules/bootstrap/scss/grid";
+// Grid cетка: .row, .col-*, .g-*, .offset-*, .order-* и т.п.
+@import "../../node_modules/bootstrap/scss/grid";
 
-// Импортирвем Accordion
+// Containers - стили для .container и .container-fluid: max-width, padding, центрирование
+@import "../../node_modules/bootstrap/scss/containers";
+
+// Accordion: аккордеон Bootstrap (.accordion, .accordion-item, .accordion-body и т.д.)
 // @import "../../node_modules/bootstrap/scss/accordion";
 
-//Alert
+// Alert: компоненты предупреждений (.alert, .alert-success, .alert-dismissible и т.д.)
 // @import "../../node_modules/bootstrap/scss/alert";
+
+// Close: иконка [×] и стили для закрывающих элементов (.btn-close)
 // @import "../../node_modules/bootstrap/scss/close";
+
+// Buttons: базовые стили для .btn, .btn-primary, .btn-outline и т.д.
 // @import "../../node_modules/bootstrap/scss/buttons";
 
 /*
-* fonts
+* Connecting CSS sources Bootstrap 5
 */
-@use "fonts/fonts.scss" as *;
+// Грид
+// @use "../../node_modules/bootstrap/dist/css/bootstrap-grid.css" as *;
 
 /*
-* my scss
+* Fonts
 */
-@use "style/style.scss" as *;
+@import "fonts/fonts.scss";
+
+/*
+* My scss
+*/
+@import "style/style.scss";
+
+/*
+* Import media
+*/
+@import "style/media.scss";
