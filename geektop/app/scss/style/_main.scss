@@ -13,3 +13,148 @@
 .top-ad {
     margin-bottom: $gutter;
 }
+
+.item-title {
+    min-height: 340px;
+
+    &-content {
+        position: absolute;
+        bottom: 0;
+        color: #fff;
+        padding: 40px;
+        z-index: 1;
+
+        h3 {
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: 800;
+            width: 100%;
+            line-height: 1.25;
+            font-size: 19px;
+        }
+
+        a {
+            color: #fff;
+        }
+    }
+}
+
+.pattern {
+    background-color: $dark;
+    position: relative;
+    display: block;
+
+    &::before {
+        content: "";
+        transition: opacity 0.25s ease, top 0.25s ease, left 0.25s ease,
+            bottom 0.25s ease, right 0.25s ease;
+        z-index: 1;
+        position: absolute;
+        border: #fff solid 1px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+    }
+
+    &:hover {
+        &::before {
+            opacity: 0.2;
+            top: 10px;
+            left: 10px;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .overlay {
+            &::before {
+                opacity: 0.75;
+            }
+        }
+    }
+
+}
+
+.overlay {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: block;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: $dark;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0.55;
+        transition: opacity 0.25s ease;
+    }
+
+    &:hover::before {
+        opacity: 0.75;
+    }
+}
+
+.item-social {
+    margin-top: 10px;
+
+    .fa {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+}
+.item-comments {
+    display: inline-block;
+    margin-right: 20px;
+
+    &-count {
+        font-size: 12px;
+        display: inline-block;
+        position: relative;
+    }
+}
+.fa {
+}
+.fa-comments {
+}
+.item-comments-count {
+}
+.fa-share-alt {
+}
+.likely {
+}
+.likely-custom {
+    display: inline-block;
+    font-size: 12px;
+
+    .likely__icon {
+        margin-right: 5px;
+    }
+
+    > a {
+        padding: 5px;
+        position: relative;
+        margin: 6px 2px 0;
+        border: 1px solid #fff;
+        border-radius: 4px;
+    }
+
+    svg {
+        width: 11px;
+        height: auto;
+        path {
+            fill: #fff;
+        }
+    }
+}
+.vkontakte {
+}
+.facebook {
+}
+.twitter {
+}

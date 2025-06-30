@@ -8256,675 +8256,6 @@
 /*
 * Connecting CSS ilyabirman-likely
 */
-/*!
- * Likely 3.2.0-dev by Nikolay Rys (linkedin.com/in/nikolay-rys), Ilya Birman (ilyabirman.net), and contributors.
- * Special thanks to Viktor Karpov (twitter.com/vitkarpov), Ivan Akulov (iamakulov.com), Evgeny Steblinsky (volter9.github.io), and Artem Sapegin (sapegin.me).
- */
-.likely {
-  opacity: 0;
-  -webkit-transition: opacity 0.1s ease-in;
-  transition: opacity 0.1s ease-in;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 0 !important;
-  text-indent: 0 !important;
-}
-
-.likely * {
-  visibility: hidden;
-  display: inline-block;
-}
-
-.likely_ready, .likely_visible {
-  opacity: 1;
-}
-
-.likely_ready *, .likely_visible * {
-  visibility: inherit;
-}
-
-.likely__button {
-  position: relative;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  color: inherit;
-}
-
-.likely__counter {
-  display: none;
-  position: relative;
-  text-align: center;
-  background-size: 1px 1px;
-  background-repeat: repeat-y;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0, transparent 0.5px, transparent);
-}
-
-.likely__widget, .likely__widget:visited {
-  all: initial;
-  display: inline-block;
-  position: relative;
-  white-space: nowrap;
-  color: #000;
-  background: hsla(0, 0%, 91%, 0.8);
-  -webkit-transition: background 0.33s ease-out, color 0.33s ease-out, fill 0.33s ease-out;
-  transition: background 0.33s ease-out, color 0.33s ease-out, fill 0.33s ease-out;
-}
-
-.likely__widget:active, .likely__widget:focus, .likely__widget:hover, .likely__widget:visited:active, .likely__widget:visited:focus, .likely__widget:visited:hover {
-  -webkit-transition: none;
-  transition: none;
-  cursor: pointer;
-}
-
-@media (hover: none) {
-  .likely__widget:active, .likely__widget:focus, .likely__widget:hover, .likely__widget:visited:active, .likely__widget:visited:focus, .likely__widget:visited:hover {
-    -webkit-transition: background 0.33s ease-out, color 0.33s ease-out, fill 0.33s ease-out;
-    transition: background 0.33s ease-out, color 0.33s ease-out, fill 0.33s ease-out;
-    cursor: unset;
-  }
-}
-.likely__icon {
-  position: relative;
-  text-align: left;
-}
-
-.likely svg {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.likely__button, .likely__counter {
-  font-weight: 400;
-  font-family: Helvetica Neue, Arial, sans-serif;
-  text-decoration: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin: 0;
-  outline: 0;
-  line-height: inherit;
-  cursor: inherit;
-}
-
-.likely__button:empty {
-  display: none;
-}
-
-.likely_ready .likely__counter {
-  display: inline-block;
-}
-
-.likely_ready .likely__counter_empty {
-  display: none;
-}
-
-.likely__button, .likely__counter, .likely__icon, .likely__widget, .likely__widget:visited {
-  vertical-align: top;
-}
-
-.likely-dark-theme .likely__widget, .likely-dark-theme .likely__widget:visited, .likely-light .likely__widget, .likely-light .likely__widget:visited {
-  color: #fff;
-  fill: #fff;
-  background: hsla(0, 0%, 93%, 0.16);
-  text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-}
-
-.likely-dark-theme .likely__counter, .likely-light .likely__counter {
-  background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0.4) 0, hsla(0, 0%, 100%, 0) 0.5px, hsla(0, 0%, 100%, 0));
-}
-
-@media (prefers-color-scheme: dark) {
-  .likely-color-theme-based .likely__widget, .likely-color-theme-based .likely__widget:visited {
-    color: #fff;
-    fill: #fff;
-    background: hsla(0, 0%, 93%, 0.16);
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-  }
-  .likely-color-theme-based .likely__counter {
-    background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0.4) 0, hsla(0, 0%, 100%, 0) 0.5px, hsla(0, 0%, 100%, 0));
-  }
-}
-.likely__widget_facebook, .likely__widget_facebook:visited {
-  fill: #1877f2;
-}
-
-.likely__widget_facebook:active, .likely__widget_facebook:focus, .likely__widget_facebook:hover, .likely__widget_facebook:visited:active, .likely__widget_facebook:visited:focus, .likely__widget_facebook:visited:hover {
-  all: initial;
-  fill: #1877f2;
-  -webkit-transition: none;
-  transition: none;
-  cursor: pointer;
-  background: rgba(197, 221, 251, 0.8);
-}
-
-@media (hover: none) {
-  .likely__widget_facebook:active, .likely__widget_facebook:focus, .likely__widget_facebook:hover, .likely__widget_facebook:visited:active, .likely__widget_facebook:visited:focus, .likely__widget_facebook:visited:hover {
-    -webkit-transition: widget-transition;
-    transition: widget-transition;
-    cursor: unset;
-    background: hsla(0, 0%, 91%, 0.8);
-  }
-}
-.likely-dark-theme .likely__widget_facebook:active, .likely-dark-theme .likely__widget_facebook:focus, .likely-dark-theme .likely__widget_facebook:hover, .likely-dark-theme .likely__widget_facebook:visited:active, .likely-dark-theme .likely__widget_facebook:visited:focus, .likely-dark-theme .likely__widget_facebook:visited:hover, .likely-light .likely__widget_facebook:active, .likely-light .likely__widget_facebook:focus, .likely-light .likely__widget_facebook:hover, .likely-light .likely__widget_facebook:visited:active, .likely-light .likely__widget_facebook:visited:focus, .likely-light .likely__widget_facebook:visited:hover {
-  text-shadow: #1877f2 0 0 0.25em;
-  background: rgba(24, 119, 242, 0.7);
-}
-
-@media (hover: none) {
-  .likely-dark-theme .likely__widget_facebook:active, .likely-dark-theme .likely__widget_facebook:focus, .likely-dark-theme .likely__widget_facebook:hover, .likely-dark-theme .likely__widget_facebook:visited:active, .likely-dark-theme .likely__widget_facebook:visited:focus, .likely-dark-theme .likely__widget_facebook:visited:hover, .likely-light .likely__widget_facebook:active, .likely-light .likely__widget_facebook:focus, .likely-light .likely__widget_facebook:hover, .likely-light .likely__widget_facebook:visited:active, .likely-light .likely__widget_facebook:visited:focus, .likely-light .likely__widget_facebook:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .likely-color-theme-based .likely__widget_facebook:active, .likely-color-theme-based .likely__widget_facebook:focus, .likely-color-theme-based .likely__widget_facebook:hover, .likely-color-theme-based .likely__widget_facebook:visited:active, .likely-color-theme-based .likely__widget_facebook:visited:focus, .likely-color-theme-based .likely__widget_facebook:visited:hover {
-    text-shadow: #1877f2 0 0 0.25em;
-    background: rgba(24, 119, 242, 0.7);
-  }
-}
-@media (prefers-color-scheme: dark) and (hover: none) {
-  .likely-color-theme-based .likely__widget_facebook:active, .likely-color-theme-based .likely__widget_facebook:focus, .likely-color-theme-based .likely__widget_facebook:hover, .likely-color-theme-based .likely__widget_facebook:visited:active, .likely-color-theme-based .likely__widget_facebook:visited:focus, .likely-color-theme-based .likely__widget_facebook:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-.likely__widget_linkedin, .likely__widget_linkedin:visited {
-  fill: #0a66c2;
-}
-
-.likely__widget_linkedin:active, .likely__widget_linkedin:focus, .likely__widget_linkedin:hover, .likely__widget_linkedin:visited:active, .likely__widget_linkedin:visited:focus, .likely__widget_linkedin:visited:hover {
-  all: initial;
-  fill: #0a66c2;
-  -webkit-transition: none;
-  transition: none;
-  cursor: pointer;
-  background: rgba(193, 216, 239, 0.8);
-}
-
-@media (hover: none) {
-  .likely__widget_linkedin:active, .likely__widget_linkedin:focus, .likely__widget_linkedin:hover, .likely__widget_linkedin:visited:active, .likely__widget_linkedin:visited:focus, .likely__widget_linkedin:visited:hover {
-    -webkit-transition: widget-transition;
-    transition: widget-transition;
-    cursor: unset;
-    background: hsla(0, 0%, 91%, 0.8);
-  }
-}
-.likely-dark-theme .likely__widget_linkedin:active, .likely-dark-theme .likely__widget_linkedin:focus, .likely-dark-theme .likely__widget_linkedin:hover, .likely-dark-theme .likely__widget_linkedin:visited:active, .likely-dark-theme .likely__widget_linkedin:visited:focus, .likely-dark-theme .likely__widget_linkedin:visited:hover, .likely-light .likely__widget_linkedin:active, .likely-light .likely__widget_linkedin:focus, .likely-light .likely__widget_linkedin:hover, .likely-light .likely__widget_linkedin:visited:active, .likely-light .likely__widget_linkedin:visited:focus, .likely-light .likely__widget_linkedin:visited:hover {
-  text-shadow: #0a66c2 0 0 0.25em;
-  background: rgba(10, 102, 194, 0.7);
-}
-
-@media (hover: none) {
-  .likely-dark-theme .likely__widget_linkedin:active, .likely-dark-theme .likely__widget_linkedin:focus, .likely-dark-theme .likely__widget_linkedin:hover, .likely-dark-theme .likely__widget_linkedin:visited:active, .likely-dark-theme .likely__widget_linkedin:visited:focus, .likely-dark-theme .likely__widget_linkedin:visited:hover, .likely-light .likely__widget_linkedin:active, .likely-light .likely__widget_linkedin:focus, .likely-light .likely__widget_linkedin:hover, .likely-light .likely__widget_linkedin:visited:active, .likely-light .likely__widget_linkedin:visited:focus, .likely-light .likely__widget_linkedin:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .likely-color-theme-based .likely__widget_linkedin:active, .likely-color-theme-based .likely__widget_linkedin:focus, .likely-color-theme-based .likely__widget_linkedin:hover, .likely-color-theme-based .likely__widget_linkedin:visited:active, .likely-color-theme-based .likely__widget_linkedin:visited:focus, .likely-color-theme-based .likely__widget_linkedin:visited:hover {
-    text-shadow: #0a66c2 0 0 0.25em;
-    background: rgba(10, 102, 194, 0.7);
-  }
-}
-@media (prefers-color-scheme: dark) and (hover: none) {
-  .likely-color-theme-based .likely__widget_linkedin:active, .likely-color-theme-based .likely__widget_linkedin:focus, .likely-color-theme-based .likely__widget_linkedin:hover, .likely-color-theme-based .likely__widget_linkedin:visited:active, .likely-color-theme-based .likely__widget_linkedin:visited:focus, .likely-color-theme-based .likely__widget_linkedin:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-.likely__widget_odnoklassniki, .likely__widget_odnoklassniki:visited {
-  fill: #ee8208;
-}
-
-.likely__widget_odnoklassniki:active, .likely__widget_odnoklassniki:focus, .likely__widget_odnoklassniki:hover, .likely__widget_odnoklassniki:visited:active, .likely__widget_odnoklassniki:visited:focus, .likely__widget_odnoklassniki:visited:hover {
-  all: initial;
-  fill: #ee8208;
-  -webkit-transition: none;
-  transition: none;
-  cursor: pointer;
-  background: hsla(32, 85%, 87%, 0.8);
-}
-
-@media (hover: none) {
-  .likely__widget_odnoklassniki:active, .likely__widget_odnoklassniki:focus, .likely__widget_odnoklassniki:hover, .likely__widget_odnoklassniki:visited:active, .likely__widget_odnoklassniki:visited:focus, .likely__widget_odnoklassniki:visited:hover {
-    -webkit-transition: widget-transition;
-    transition: widget-transition;
-    cursor: unset;
-    background: hsla(0, 0%, 91%, 0.8);
-  }
-}
-.likely-dark-theme .likely__widget_odnoklassniki:active, .likely-dark-theme .likely__widget_odnoklassniki:focus, .likely-dark-theme .likely__widget_odnoklassniki:hover, .likely-dark-theme .likely__widget_odnoklassniki:visited:active, .likely-dark-theme .likely__widget_odnoklassniki:visited:focus, .likely-dark-theme .likely__widget_odnoklassniki:visited:hover, .likely-light .likely__widget_odnoklassniki:active, .likely-light .likely__widget_odnoklassniki:focus, .likely-light .likely__widget_odnoklassniki:hover, .likely-light .likely__widget_odnoklassniki:visited:active, .likely-light .likely__widget_odnoklassniki:visited:focus, .likely-light .likely__widget_odnoklassniki:visited:hover {
-  text-shadow: #ee8208 0 0 0.25em;
-  background: rgba(238, 130, 8, 0.7);
-}
-
-@media (hover: none) {
-  .likely-dark-theme .likely__widget_odnoklassniki:active, .likely-dark-theme .likely__widget_odnoklassniki:focus, .likely-dark-theme .likely__widget_odnoklassniki:hover, .likely-dark-theme .likely__widget_odnoklassniki:visited:active, .likely-dark-theme .likely__widget_odnoklassniki:visited:focus, .likely-dark-theme .likely__widget_odnoklassniki:visited:hover, .likely-light .likely__widget_odnoklassniki:active, .likely-light .likely__widget_odnoklassniki:focus, .likely-light .likely__widget_odnoklassniki:hover, .likely-light .likely__widget_odnoklassniki:visited:active, .likely-light .likely__widget_odnoklassniki:visited:focus, .likely-light .likely__widget_odnoklassniki:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .likely-color-theme-based .likely__widget_odnoklassniki:active, .likely-color-theme-based .likely__widget_odnoklassniki:focus, .likely-color-theme-based .likely__widget_odnoklassniki:hover, .likely-color-theme-based .likely__widget_odnoklassniki:visited:active, .likely-color-theme-based .likely__widget_odnoklassniki:visited:focus, .likely-color-theme-based .likely__widget_odnoklassniki:visited:hover {
-    text-shadow: #ee8208 0 0 0.25em;
-    background: rgba(238, 130, 8, 0.7);
-  }
-}
-@media (prefers-color-scheme: dark) and (hover: none) {
-  .likely-color-theme-based .likely__widget_odnoklassniki:active, .likely-color-theme-based .likely__widget_odnoklassniki:focus, .likely-color-theme-based .likely__widget_odnoklassniki:hover, .likely-color-theme-based .likely__widget_odnoklassniki:visited:active, .likely-color-theme-based .likely__widget_odnoklassniki:visited:focus, .likely-color-theme-based .likely__widget_odnoklassniki:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-.likely__widget_pinterest, .likely__widget_pinterest:visited {
-  fill: #e60019;
-}
-
-.likely__widget_pinterest:active, .likely__widget_pinterest:focus, .likely__widget_pinterest:hover, .likely__widget_pinterest:visited:active, .likely__widget_pinterest:visited:focus, .likely__widget_pinterest:visited:hover {
-  all: initial;
-  fill: #e60019;
-  -webkit-transition: none;
-  transition: none;
-  cursor: pointer;
-  background: rgba(248, 191, 197, 0.8);
-}
-
-@media (hover: none) {
-  .likely__widget_pinterest:active, .likely__widget_pinterest:focus, .likely__widget_pinterest:hover, .likely__widget_pinterest:visited:active, .likely__widget_pinterest:visited:focus, .likely__widget_pinterest:visited:hover {
-    -webkit-transition: widget-transition;
-    transition: widget-transition;
-    cursor: unset;
-    background: hsla(0, 0%, 91%, 0.8);
-  }
-}
-.likely-dark-theme .likely__widget_pinterest:active, .likely-dark-theme .likely__widget_pinterest:focus, .likely-dark-theme .likely__widget_pinterest:hover, .likely-dark-theme .likely__widget_pinterest:visited:active, .likely-dark-theme .likely__widget_pinterest:visited:focus, .likely-dark-theme .likely__widget_pinterest:visited:hover, .likely-light .likely__widget_pinterest:active, .likely-light .likely__widget_pinterest:focus, .likely-light .likely__widget_pinterest:hover, .likely-light .likely__widget_pinterest:visited:active, .likely-light .likely__widget_pinterest:visited:focus, .likely-light .likely__widget_pinterest:visited:hover {
-  text-shadow: #e60019 0 0 0.25em;
-  background: rgba(230, 0, 25, 0.7);
-}
-
-@media (hover: none) {
-  .likely-dark-theme .likely__widget_pinterest:active, .likely-dark-theme .likely__widget_pinterest:focus, .likely-dark-theme .likely__widget_pinterest:hover, .likely-dark-theme .likely__widget_pinterest:visited:active, .likely-dark-theme .likely__widget_pinterest:visited:focus, .likely-dark-theme .likely__widget_pinterest:visited:hover, .likely-light .likely__widget_pinterest:active, .likely-light .likely__widget_pinterest:focus, .likely-light .likely__widget_pinterest:hover, .likely-light .likely__widget_pinterest:visited:active, .likely-light .likely__widget_pinterest:visited:focus, .likely-light .likely__widget_pinterest:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .likely-color-theme-based .likely__widget_pinterest:active, .likely-color-theme-based .likely__widget_pinterest:focus, .likely-color-theme-based .likely__widget_pinterest:hover, .likely-color-theme-based .likely__widget_pinterest:visited:active, .likely-color-theme-based .likely__widget_pinterest:visited:focus, .likely-color-theme-based .likely__widget_pinterest:visited:hover {
-    text-shadow: #e60019 0 0 0.25em;
-    background: rgba(230, 0, 25, 0.7);
-  }
-}
-@media (prefers-color-scheme: dark) and (hover: none) {
-  .likely-color-theme-based .likely__widget_pinterest:active, .likely-color-theme-based .likely__widget_pinterest:focus, .likely-color-theme-based .likely__widget_pinterest:hover, .likely-color-theme-based .likely__widget_pinterest:visited:active, .likely-color-theme-based .likely__widget_pinterest:visited:focus, .likely-color-theme-based .likely__widget_pinterest:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-.likely__widget_reddit, .likely__widget_reddit:visited {
-  fill: #ff4501;
-}
-
-.likely__widget_reddit:active, .likely__widget_reddit:focus, .likely__widget_reddit:hover, .likely__widget_reddit:visited:active, .likely__widget_reddit:visited:focus, .likely__widget_reddit:visited:hover {
-  all: initial;
-  fill: #ff4501;
-  -webkit-transition: none;
-  transition: none;
-  cursor: pointer;
-  background: rgba(255, 208, 191, 0.8);
-}
-
-@media (hover: none) {
-  .likely__widget_reddit:active, .likely__widget_reddit:focus, .likely__widget_reddit:hover, .likely__widget_reddit:visited:active, .likely__widget_reddit:visited:focus, .likely__widget_reddit:visited:hover {
-    -webkit-transition: widget-transition;
-    transition: widget-transition;
-    cursor: unset;
-    background: hsla(0, 0%, 91%, 0.8);
-  }
-}
-.likely-dark-theme .likely__widget_reddit:active, .likely-dark-theme .likely__widget_reddit:focus, .likely-dark-theme .likely__widget_reddit:hover, .likely-dark-theme .likely__widget_reddit:visited:active, .likely-dark-theme .likely__widget_reddit:visited:focus, .likely-dark-theme .likely__widget_reddit:visited:hover, .likely-light .likely__widget_reddit:active, .likely-light .likely__widget_reddit:focus, .likely-light .likely__widget_reddit:hover, .likely-light .likely__widget_reddit:visited:active, .likely-light .likely__widget_reddit:visited:focus, .likely-light .likely__widget_reddit:visited:hover {
-  text-shadow: #ff4501 0 0 0.25em;
-  background: rgba(255, 69, 1, 0.7);
-}
-
-@media (hover: none) {
-  .likely-dark-theme .likely__widget_reddit:active, .likely-dark-theme .likely__widget_reddit:focus, .likely-dark-theme .likely__widget_reddit:hover, .likely-dark-theme .likely__widget_reddit:visited:active, .likely-dark-theme .likely__widget_reddit:visited:focus, .likely-dark-theme .likely__widget_reddit:visited:hover, .likely-light .likely__widget_reddit:active, .likely-light .likely__widget_reddit:focus, .likely-light .likely__widget_reddit:hover, .likely-light .likely__widget_reddit:visited:active, .likely-light .likely__widget_reddit:visited:focus, .likely-light .likely__widget_reddit:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .likely-color-theme-based .likely__widget_reddit:active, .likely-color-theme-based .likely__widget_reddit:focus, .likely-color-theme-based .likely__widget_reddit:hover, .likely-color-theme-based .likely__widget_reddit:visited:active, .likely-color-theme-based .likely__widget_reddit:visited:focus, .likely-color-theme-based .likely__widget_reddit:visited:hover {
-    text-shadow: #ff4501 0 0 0.25em;
-    background: rgba(255, 69, 1, 0.7);
-  }
-}
-@media (prefers-color-scheme: dark) and (hover: none) {
-  .likely-color-theme-based .likely__widget_reddit:active, .likely-color-theme-based .likely__widget_reddit:focus, .likely-color-theme-based .likely__widget_reddit:hover, .likely-color-theme-based .likely__widget_reddit:visited:active, .likely-color-theme-based .likely__widget_reddit:visited:focus, .likely-color-theme-based .likely__widget_reddit:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-.likely__widget_telegram, .likely__widget_telegram:visited {
-  fill: #35a3dc;
-}
-
-.likely__widget_telegram:active, .likely__widget_telegram:focus, .likely__widget_telegram:hover, .likely__widget_telegram:visited:active, .likely__widget_telegram:visited:focus, .likely__widget_telegram:visited:hover {
-  all: initial;
-  fill: #35a3dc;
-  -webkit-transition: none;
-  transition: none;
-  cursor: pointer;
-  background: rgba(204, 232, 246, 0.8);
-}
-
-@media (hover: none) {
-  .likely__widget_telegram:active, .likely__widget_telegram:focus, .likely__widget_telegram:hover, .likely__widget_telegram:visited:active, .likely__widget_telegram:visited:focus, .likely__widget_telegram:visited:hover {
-    -webkit-transition: widget-transition;
-    transition: widget-transition;
-    cursor: unset;
-    background: hsla(0, 0%, 91%, 0.8);
-  }
-}
-.likely-dark-theme .likely__widget_telegram:active, .likely-dark-theme .likely__widget_telegram:focus, .likely-dark-theme .likely__widget_telegram:hover, .likely-dark-theme .likely__widget_telegram:visited:active, .likely-dark-theme .likely__widget_telegram:visited:focus, .likely-dark-theme .likely__widget_telegram:visited:hover, .likely-light .likely__widget_telegram:active, .likely-light .likely__widget_telegram:focus, .likely-light .likely__widget_telegram:hover, .likely-light .likely__widget_telegram:visited:active, .likely-light .likely__widget_telegram:visited:focus, .likely-light .likely__widget_telegram:visited:hover {
-  text-shadow: #35a3dc 0 0 0.25em;
-  background: rgba(53, 163, 220, 0.7);
-}
-
-@media (hover: none) {
-  .likely-dark-theme .likely__widget_telegram:active, .likely-dark-theme .likely__widget_telegram:focus, .likely-dark-theme .likely__widget_telegram:hover, .likely-dark-theme .likely__widget_telegram:visited:active, .likely-dark-theme .likely__widget_telegram:visited:focus, .likely-dark-theme .likely__widget_telegram:visited:hover, .likely-light .likely__widget_telegram:active, .likely-light .likely__widget_telegram:focus, .likely-light .likely__widget_telegram:hover, .likely-light .likely__widget_telegram:visited:active, .likely-light .likely__widget_telegram:visited:focus, .likely-light .likely__widget_telegram:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .likely-color-theme-based .likely__widget_telegram:active, .likely-color-theme-based .likely__widget_telegram:focus, .likely-color-theme-based .likely__widget_telegram:hover, .likely-color-theme-based .likely__widget_telegram:visited:active, .likely-color-theme-based .likely__widget_telegram:visited:focus, .likely-color-theme-based .likely__widget_telegram:visited:hover {
-    text-shadow: #35a3dc 0 0 0.25em;
-    background: rgba(53, 163, 220, 0.7);
-  }
-}
-@media (prefers-color-scheme: dark) and (hover: none) {
-  .likely-color-theme-based .likely__widget_telegram:active, .likely-color-theme-based .likely__widget_telegram:focus, .likely-color-theme-based .likely__widget_telegram:hover, .likely-color-theme-based .likely__widget_telegram:visited:active, .likely-color-theme-based .likely__widget_telegram:visited:focus, .likely-color-theme-based .likely__widget_telegram:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-.likely__widget_twitter, .likely__widget_twitter:visited {
-  fill: #1da1f2;
-}
-
-.likely__widget_twitter:active, .likely__widget_twitter:focus, .likely__widget_twitter:hover, .likely__widget_twitter:visited:active, .likely__widget_twitter:visited:focus, .likely__widget_twitter:visited:hover {
-  all: initial;
-  fill: #1da1f2;
-  -webkit-transition: none;
-  transition: none;
-  cursor: pointer;
-  background: rgba(198, 231, 251, 0.8);
-}
-
-@media (hover: none) {
-  .likely__widget_twitter:active, .likely__widget_twitter:focus, .likely__widget_twitter:hover, .likely__widget_twitter:visited:active, .likely__widget_twitter:visited:focus, .likely__widget_twitter:visited:hover {
-    -webkit-transition: widget-transition;
-    transition: widget-transition;
-    cursor: unset;
-    background: hsla(0, 0%, 91%, 0.8);
-  }
-}
-.likely-dark-theme .likely__widget_twitter:active, .likely-dark-theme .likely__widget_twitter:focus, .likely-dark-theme .likely__widget_twitter:hover, .likely-dark-theme .likely__widget_twitter:visited:active, .likely-dark-theme .likely__widget_twitter:visited:focus, .likely-dark-theme .likely__widget_twitter:visited:hover, .likely-light .likely__widget_twitter:active, .likely-light .likely__widget_twitter:focus, .likely-light .likely__widget_twitter:hover, .likely-light .likely__widget_twitter:visited:active, .likely-light .likely__widget_twitter:visited:focus, .likely-light .likely__widget_twitter:visited:hover {
-  text-shadow: #1da1f2 0 0 0.25em;
-  background: rgba(29, 161, 242, 0.7);
-}
-
-@media (hover: none) {
-  .likely-dark-theme .likely__widget_twitter:active, .likely-dark-theme .likely__widget_twitter:focus, .likely-dark-theme .likely__widget_twitter:hover, .likely-dark-theme .likely__widget_twitter:visited:active, .likely-dark-theme .likely__widget_twitter:visited:focus, .likely-dark-theme .likely__widget_twitter:visited:hover, .likely-light .likely__widget_twitter:active, .likely-light .likely__widget_twitter:focus, .likely-light .likely__widget_twitter:hover, .likely-light .likely__widget_twitter:visited:active, .likely-light .likely__widget_twitter:visited:focus, .likely-light .likely__widget_twitter:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .likely-color-theme-based .likely__widget_twitter:active, .likely-color-theme-based .likely__widget_twitter:focus, .likely-color-theme-based .likely__widget_twitter:hover, .likely-color-theme-based .likely__widget_twitter:visited:active, .likely-color-theme-based .likely__widget_twitter:visited:focus, .likely-color-theme-based .likely__widget_twitter:visited:hover {
-    text-shadow: #1da1f2 0 0 0.25em;
-    background: rgba(29, 161, 242, 0.7);
-  }
-}
-@media (prefers-color-scheme: dark) and (hover: none) {
-  .likely-color-theme-based .likely__widget_twitter:active, .likely-color-theme-based .likely__widget_twitter:focus, .likely-color-theme-based .likely__widget_twitter:hover, .likely-color-theme-based .likely__widget_twitter:visited:active, .likely-color-theme-based .likely__widget_twitter:visited:focus, .likely-color-theme-based .likely__widget_twitter:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-.likely__widget_viber, .likely__widget_viber:visited {
-  fill: #7360f2;
-}
-
-.likely__widget_viber:active, .likely__widget_viber:focus, .likely__widget_viber:hover, .likely__widget_viber:visited:active, .likely__widget_viber:visited:focus, .likely__widget_viber:visited:hover {
-  all: initial;
-  fill: #7360f2;
-  -webkit-transition: none;
-  transition: none;
-  cursor: pointer;
-  background: rgba(220, 215, 251, 0.8);
-}
-
-@media (hover: none) {
-  .likely__widget_viber:active, .likely__widget_viber:focus, .likely__widget_viber:hover, .likely__widget_viber:visited:active, .likely__widget_viber:visited:focus, .likely__widget_viber:visited:hover {
-    -webkit-transition: widget-transition;
-    transition: widget-transition;
-    cursor: unset;
-    background: hsla(0, 0%, 91%, 0.8);
-  }
-}
-.likely-dark-theme .likely__widget_viber:active, .likely-dark-theme .likely__widget_viber:focus, .likely-dark-theme .likely__widget_viber:hover, .likely-dark-theme .likely__widget_viber:visited:active, .likely-dark-theme .likely__widget_viber:visited:focus, .likely-dark-theme .likely__widget_viber:visited:hover, .likely-light .likely__widget_viber:active, .likely-light .likely__widget_viber:focus, .likely-light .likely__widget_viber:hover, .likely-light .likely__widget_viber:visited:active, .likely-light .likely__widget_viber:visited:focus, .likely-light .likely__widget_viber:visited:hover {
-  text-shadow: #7360f2 0 0 0.25em;
-  background: rgba(115, 96, 242, 0.7);
-}
-
-@media (hover: none) {
-  .likely-dark-theme .likely__widget_viber:active, .likely-dark-theme .likely__widget_viber:focus, .likely-dark-theme .likely__widget_viber:hover, .likely-dark-theme .likely__widget_viber:visited:active, .likely-dark-theme .likely__widget_viber:visited:focus, .likely-dark-theme .likely__widget_viber:visited:hover, .likely-light .likely__widget_viber:active, .likely-light .likely__widget_viber:focus, .likely-light .likely__widget_viber:hover, .likely-light .likely__widget_viber:visited:active, .likely-light .likely__widget_viber:visited:focus, .likely-light .likely__widget_viber:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .likely-color-theme-based .likely__widget_viber:active, .likely-color-theme-based .likely__widget_viber:focus, .likely-color-theme-based .likely__widget_viber:hover, .likely-color-theme-based .likely__widget_viber:visited:active, .likely-color-theme-based .likely__widget_viber:visited:focus, .likely-color-theme-based .likely__widget_viber:visited:hover {
-    text-shadow: #7360f2 0 0 0.25em;
-    background: rgba(115, 96, 242, 0.7);
-  }
-}
-@media (prefers-color-scheme: dark) and (hover: none) {
-  .likely-color-theme-based .likely__widget_viber:active, .likely-color-theme-based .likely__widget_viber:focus, .likely-color-theme-based .likely__widget_viber:hover, .likely-color-theme-based .likely__widget_viber:visited:active, .likely-color-theme-based .likely__widget_viber:visited:focus, .likely-color-theme-based .likely__widget_viber:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-.likely__widget_vkontakte, .likely__widget_vkontakte:visited {
-  fill: #07f;
-}
-
-.likely__widget_vkontakte:active, .likely__widget_vkontakte:focus, .likely__widget_vkontakte:hover, .likely__widget_vkontakte:visited:active, .likely__widget_vkontakte:visited:focus, .likely__widget_vkontakte:visited:hover {
-  all: initial;
-  fill: #07f;
-  -webkit-transition: none;
-  transition: none;
-  cursor: pointer;
-  background: rgba(191, 221, 255, 0.8);
-}
-
-@media (hover: none) {
-  .likely__widget_vkontakte:active, .likely__widget_vkontakte:focus, .likely__widget_vkontakte:hover, .likely__widget_vkontakte:visited:active, .likely__widget_vkontakte:visited:focus, .likely__widget_vkontakte:visited:hover {
-    -webkit-transition: widget-transition;
-    transition: widget-transition;
-    cursor: unset;
-    background: hsla(0, 0%, 91%, 0.8);
-  }
-}
-.likely-dark-theme .likely__widget_vkontakte:active, .likely-dark-theme .likely__widget_vkontakte:focus, .likely-dark-theme .likely__widget_vkontakte:hover, .likely-dark-theme .likely__widget_vkontakte:visited:active, .likely-dark-theme .likely__widget_vkontakte:visited:focus, .likely-dark-theme .likely__widget_vkontakte:visited:hover, .likely-light .likely__widget_vkontakte:active, .likely-light .likely__widget_vkontakte:focus, .likely-light .likely__widget_vkontakte:hover, .likely-light .likely__widget_vkontakte:visited:active, .likely-light .likely__widget_vkontakte:visited:focus, .likely-light .likely__widget_vkontakte:visited:hover {
-  text-shadow: #07f 0 0 0.25em;
-  background: rgba(0, 119, 255, 0.7);
-}
-
-@media (hover: none) {
-  .likely-dark-theme .likely__widget_vkontakte:active, .likely-dark-theme .likely__widget_vkontakte:focus, .likely-dark-theme .likely__widget_vkontakte:hover, .likely-dark-theme .likely__widget_vkontakte:visited:active, .likely-dark-theme .likely__widget_vkontakte:visited:focus, .likely-dark-theme .likely__widget_vkontakte:visited:hover, .likely-light .likely__widget_vkontakte:active, .likely-light .likely__widget_vkontakte:focus, .likely-light .likely__widget_vkontakte:hover, .likely-light .likely__widget_vkontakte:visited:active, .likely-light .likely__widget_vkontakte:visited:focus, .likely-light .likely__widget_vkontakte:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .likely-color-theme-based .likely__widget_vkontakte:active, .likely-color-theme-based .likely__widget_vkontakte:focus, .likely-color-theme-based .likely__widget_vkontakte:hover, .likely-color-theme-based .likely__widget_vkontakte:visited:active, .likely-color-theme-based .likely__widget_vkontakte:visited:focus, .likely-color-theme-based .likely__widget_vkontakte:visited:hover {
-    text-shadow: #07f 0 0 0.25em;
-    background: rgba(0, 119, 255, 0.7);
-  }
-}
-@media (prefers-color-scheme: dark) and (hover: none) {
-  .likely-color-theme-based .likely__widget_vkontakte:active, .likely-color-theme-based .likely__widget_vkontakte:focus, .likely-color-theme-based .likely__widget_vkontakte:hover, .likely-color-theme-based .likely__widget_vkontakte:visited:active, .likely-color-theme-based .likely__widget_vkontakte:visited:focus, .likely-color-theme-based .likely__widget_vkontakte:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-.likely__widget_whatsapp, .likely__widget_whatsapp:visited {
-  fill: #25d366;
-}
-
-.likely__widget_whatsapp:active, .likely__widget_whatsapp:focus, .likely__widget_whatsapp:hover, .likely__widget_whatsapp:visited:active, .likely__widget_whatsapp:visited:focus, .likely__widget_whatsapp:visited:hover {
-  all: initial;
-  fill: #25d366;
-  -webkit-transition: none;
-  transition: none;
-  cursor: pointer;
-  background: rgba(200, 244, 216, 0.8);
-}
-
-@media (hover: none) {
-  .likely__widget_whatsapp:active, .likely__widget_whatsapp:focus, .likely__widget_whatsapp:hover, .likely__widget_whatsapp:visited:active, .likely__widget_whatsapp:visited:focus, .likely__widget_whatsapp:visited:hover {
-    -webkit-transition: widget-transition;
-    transition: widget-transition;
-    cursor: unset;
-    background: hsla(0, 0%, 91%, 0.8);
-  }
-}
-.likely-dark-theme .likely__widget_whatsapp:active, .likely-dark-theme .likely__widget_whatsapp:focus, .likely-dark-theme .likely__widget_whatsapp:hover, .likely-dark-theme .likely__widget_whatsapp:visited:active, .likely-dark-theme .likely__widget_whatsapp:visited:focus, .likely-dark-theme .likely__widget_whatsapp:visited:hover, .likely-light .likely__widget_whatsapp:active, .likely-light .likely__widget_whatsapp:focus, .likely-light .likely__widget_whatsapp:hover, .likely-light .likely__widget_whatsapp:visited:active, .likely-light .likely__widget_whatsapp:visited:focus, .likely-light .likely__widget_whatsapp:visited:hover {
-  text-shadow: #25d366 0 0 0.25em;
-  background: rgba(37, 211, 102, 0.7);
-}
-
-@media (hover: none) {
-  .likely-dark-theme .likely__widget_whatsapp:active, .likely-dark-theme .likely__widget_whatsapp:focus, .likely-dark-theme .likely__widget_whatsapp:hover, .likely-dark-theme .likely__widget_whatsapp:visited:active, .likely-dark-theme .likely__widget_whatsapp:visited:focus, .likely-dark-theme .likely__widget_whatsapp:visited:hover, .likely-light .likely__widget_whatsapp:active, .likely-light .likely__widget_whatsapp:focus, .likely-light .likely__widget_whatsapp:hover, .likely-light .likely__widget_whatsapp:visited:active, .likely-light .likely__widget_whatsapp:visited:focus, .likely-light .likely__widget_whatsapp:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .likely-color-theme-based .likely__widget_whatsapp:active, .likely-color-theme-based .likely__widget_whatsapp:focus, .likely-color-theme-based .likely__widget_whatsapp:hover, .likely-color-theme-based .likely__widget_whatsapp:visited:active, .likely-color-theme-based .likely__widget_whatsapp:visited:focus, .likely-color-theme-based .likely__widget_whatsapp:visited:hover {
-    text-shadow: #25d366 0 0 0.25em;
-    background: rgba(37, 211, 102, 0.7);
-  }
-}
-@media (prefers-color-scheme: dark) and (hover: none) {
-  .likely-color-theme-based .likely__widget_whatsapp:active, .likely-color-theme-based .likely__widget_whatsapp:focus, .likely-color-theme-based .likely__widget_whatsapp:hover, .likely-color-theme-based .likely__widget_whatsapp:visited:active, .likely-color-theme-based .likely__widget_whatsapp:visited:focus, .likely-color-theme-based .likely__widget_whatsapp:visited:hover {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 0.33em;
-    background: hsla(0, 0%, 93%, 0.16);
-  }
-}
-.likely {
-  gap: 10px;
-}
-
-.likely .likely__widget, .likely .likely__widget:visited {
-  line-height: 20px;
-  font-size: 14px;
-  border-radius: 3px;
-  height: 22px;
-}
-
-.likely .likely__icon {
-  width: 22px;
-  height: 22px;
-}
-
-.likely .likely__button {
-  padding: 1px 4px 1px 0;
-}
-
-.likely .likely__counter {
-  padding: 1px 4px;
-}
-
-.likely svg {
-  width: 16px;
-  height: 16px;
-}
-
-.likely-big {
-  gap: 12px;
-}
-
-.likely-big .likely__widget, .likely-big .likely__widget:visited {
-  line-height: 28px;
-  font-size: 18px;
-  border-radius: 4px;
-  height: 32px;
-}
-
-.likely-big .likely__icon {
-  width: 32px;
-  height: 32px;
-}
-
-.likely-big .likely__button {
-  padding: 2px 6px 2px 0;
-}
-
-.likely-big .likely__counter {
-  padding: 2px 6px;
-}
-
-.likely-big svg {
-  width: 24px;
-  height: 24px;
-}
-
-.likely-small {
-  gap: 8px;
-}
-
-.likely-small .likely__widget, .likely-small .likely__widget:visited {
-  line-height: 14px;
-  font-size: 12px;
-  border-radius: 2px;
-  height: 18px;
-}
-
-.likely-small .likely__icon {
-  width: 18px;
-  height: 18px;
-}
-
-.likely-small .likely__button {
-  padding: 2px 3px 2px 0;
-}
-
-.likely-small .likely__counter {
-  padding: 2px 3px;
-}
-
-.likely-small svg {
-  width: 12px;
-  height: 12px;
-}
-
-
 /*
 * Connecting SCSS sources normalize-css
 */
@@ -11051,6 +10382,134 @@ section h2 {
 
 .top-ad {
   margin-bottom: 20px;
+}
+
+.item-title {
+  min-height: 340px;
+}
+
+.item-title-content {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  padding: 40px;
+  z-index: 1;
+}
+
+.item-title-content h3 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 800;
+  width: 100%;
+  line-height: 1.25;
+  font-size: 19px;
+}
+
+.item-title-content a {
+  color: #fff;
+}
+
+.pattern {
+  background-color: #202222;
+  position: relative;
+  display: block;
+}
+
+.pattern::before {
+  content: "";
+  -webkit-transition: opacity 0.25s ease, top 0.25s ease, left 0.25s ease, bottom 0.25s ease, right 0.25s ease;
+  transition: opacity 0.25s ease, top 0.25s ease, left 0.25s ease, bottom 0.25s ease, right 0.25s ease;
+  z-index: 1;
+  position: absolute;
+  border: #fff solid 1px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.pattern:hover::before {
+  opacity: 0.2;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+}
+
+.pattern:hover .overlay::before {
+  opacity: 0.75;
+}
+
+.overlay {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: block;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  background-color: #202222;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.55;
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+
+.overlay:hover::before {
+  opacity: 0.75;
+}
+
+.item-social {
+  margin-top: 10px;
+}
+
+.item-social .fa {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.item-comments {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.item-comments-count {
+  font-size: 12px;
+  display: inline-block;
+  position: relative;
+}
+
+.likely-custom {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.likely-custom .likely__icon {
+  margin-right: 5px;
+}
+
+.likely-custom > a {
+  padding: 5px;
+  position: relative;
+  margin: 6px 2px 0;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+
+.likely-custom svg {
+  width: 11px;
+  height: auto;
+}
+
+.likely-custom svg path {
+  fill: #fff;
 }
 
 /* -----------------------------------
