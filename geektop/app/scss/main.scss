@@ -4,6 +4,11 @@
 @use "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" as *;
 
 /*
+* Connecting CSS ilyabirman-likely
+*/
+@use "../../node_modules/ilyabirman-likely/release/likely.min.css" as *;
+
+/*
 * Connecting SCSS sources normalize-css
 */
 // @use "normalize/normalize.scss" as *;
@@ -23,6 +28,9 @@
 */
 // Функции Sass, используемые в переменных и картах Bootstrap
 @import "../../node_modules/bootstrap/scss/functions";
+
+// Мои переменные
+@import "style/variables";
 
 // Все переменные Bootstrap ($primary, $font-family-base, $grid-breakpoints и т.д.)
 @import "../../node_modules/bootstrap/scss/variables";

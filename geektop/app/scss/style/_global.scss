@@ -75,6 +75,27 @@ a {
     }
 }
 
+// Базовые пользовательские стили
+.container-fluid {
+    max-width: 1346px;
+    padding: 0 $gutter;
+}
+
+section {
+    background-color: #fafafa;
+    padding: {
+        top: $gutter;
+        bottom: $gutter;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 23px;
+        font-weight: 800;
+    }
+}
+
 /* -----------------------------------
 		Main
 ----------------------------------- */
