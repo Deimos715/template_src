@@ -10373,7 +10373,7 @@ section h2 {
 /* -----------------------------------
 		Main
 ----------------------------------- */
-.add {
+.ad {
   text-align: center;
   width: 100%;
   display: block;
@@ -10407,6 +10407,10 @@ section h2 {
 
 .item-title-content a {
   color: #fff;
+}
+
+.item-title-content a:hover {
+  text-decoration: underline;
 }
 
 .pattern {
@@ -10491,8 +10495,8 @@ section h2 {
   font-size: 12px;
 }
 
-.likely-custom .likely__icon {
-  margin-right: 5px;
+.likely-custom .likely__button {
+  margin-left: 15px;
 }
 
 .likely-custom > a {
@@ -10503,13 +10507,24 @@ section h2 {
   border-radius: 4px;
 }
 
+.likely-custom .likely__counter {
+  display: none;
+}
+
 .likely-custom svg {
   width: 11px;
   height: auto;
+  position: absolute;
+  top: 8.5px;
+  left: 4px;
 }
 
 .likely-custom svg path {
   fill: #fff;
+}
+
+.likely-custom > * {
+  display: inline-block;
 }
 
 /* -----------------------------------
@@ -10526,6 +10541,32 @@ section h2 {
   }
   .mobile-menu-button {
     display: block;
+  }
+  .item-title-content {
+    padding: 40px 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+    padding: 0 10px;
+  }
+  .first-section {
+    padding-top: 10px;
+  }
+  .top-ad {
+    margin-bottom: 10px;
+  }
+  .g-0 .pattern {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 575.98px) {
+  .logo {
+    font-size: 19px;
+    padding-left: 10px;
+  }
+  .search-wrap .search {
+    padding-right: 10px;
   }
 }
 /*==========  Mobile First (от меньшего к большему) ==========*/

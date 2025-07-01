@@ -3,7 +3,7 @@
 /* -----------------------------------
 		Main
 ----------------------------------- */
-.add {
+.ad {
     text-align: center;
     width: 100%;
     display: block;
@@ -35,6 +35,10 @@
 
         a {
             color: #fff;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -73,7 +77,6 @@
             }
         }
     }
-
 }
 
 .overlay {
@@ -118,22 +121,13 @@
         position: relative;
     }
 }
-.fa {
-}
-.fa-comments {
-}
-.item-comments-count {
-}
-.fa-share-alt {
-}
-.likely {
-}
+
 .likely-custom {
     display: inline-block;
     font-size: 12px;
 
-    .likely__icon {
-        margin-right: 5px;
+    .likely__button {
+        margin-left: 15px;
     }
 
     > a {
@@ -144,17 +138,22 @@
         border-radius: 4px;
     }
 
+    .likely__counter {
+        display: none;
+    }
+
     svg {
         width: 11px;
         height: auto;
+        position: absolute;
+        top: 8.5px;
+        left: 4px;
         path {
             fill: #fff;
         }
     }
-}
-.vkontakte {
-}
-.facebook {
-}
-.twitter {
+
+    > * {
+        display: inline-block;
+    }
 }

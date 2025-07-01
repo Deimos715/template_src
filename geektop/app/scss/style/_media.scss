@@ -20,18 +20,51 @@
     .mobile-menu-button {
         display: block;
     }
+
+    .item-title {
+        &-content {
+            padding: 40px 30px;
+        }
+    }
 }
 
 // ≤768px — Горизонтальные телефоны и узкие планшеты
 // Bootstrap breakpoint: down(md)
 // Контейнер: 540px
 @include media-breakpoint-down(md) {
+    .container-fluid {
+        padding: 0 calc($gutter / 2);
+    }
+
+    .first-section {
+        padding-top: calc($gutter / 2);
+    }
+
+    .top-ad {
+        margin-bottom: calc($gutter / 2);
+    }
+
+    .g-0 {
+        .pattern {
+            margin-bottom: calc($gutter / 2);
+        }
+    }
 }
 
 // ≤576px — Вертикальные телефоны
 // Bootstrap breakpoint: down(sm)
 // Контейнер: 100% или адаптивный
 @include media-breakpoint-down(sm) {
+    .logo {
+        font-size: 19px;
+        padding-left: calc($gutter / 2);
+    }
+
+    .search-wrap {
+        .search {
+            padding-right: calc($gutter / 2);
+        }
+    }
 }
 
 /*==========  Mobile First (от меньшего к большему) ==========*/
