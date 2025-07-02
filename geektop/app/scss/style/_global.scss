@@ -96,40 +96,6 @@ section {
     }
 }
 
-.second-section {
-    padding: calc($gutter / 2) 0;
-}
-
-.news-wrap {
-    padding-bottom: calc($gutter / 2);
-
-    .pattern {
-        &::before {
-            display: none;
-        }
-    }
-
-    .overlay {
-        &::before {
-            opacity: 0.4;
-        }
-    }
-}
-
-.item-news {
-    min-height: 280px;
-    margin: calc($gutter / 2) 0;
-    color: $text-color;
-
-    &-content {
-        border {
-            left: #dfdfdf 1px solid;
-            bottom: #dfdfdf 1px solid;
-        }
-        z-index: 1;
-    }
-}
-
 /* -----------------------------------
 		Main
 ----------------------------------- */
