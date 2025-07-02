@@ -10192,6 +10192,37 @@ section h2 {
   font-weight: 800;
 }
 
+.second-section {
+  padding: 10px 0;
+}
+
+.news-wrap {
+  padding-bottom: 10px;
+}
+
+.news-wrap .pattern::before {
+  display: none;
+}
+
+.news-wrap .overlay::before {
+  opacity: 0.4;
+}
+
+.item-news {
+  min-height: 280px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.item-news-content {
+  z-index: 1;
+}
+
+.item-news-content border {
+  left: #dfdfdf 1px solid;
+  bottom: #dfdfdf 1px solid;
+}
+
 /* -----------------------------------
 		Main
 ----------------------------------- */
