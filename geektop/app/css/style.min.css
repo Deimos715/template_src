@@ -10589,6 +10589,78 @@ section h2 {
   display: inline-block;
 }
 
+.dark-section {
+  padding: 30px 0;
+  background-color: #202222;
+}
+
+.dark-section h2 a {
+  color: #fff;
+}
+
+.col-item {
+  margin: 12px 0 15px;
+}
+
+.col-item a {
+  -webkit-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+
+.col-item a:hover, .col-item a.hover {
+  text-decoration: underline;
+}
+
+.col-item .item-comments {
+  margin-top: 2px;
+}
+
+.col-item .item-comments .fa,
+.col-item .item-comments .item-comments-count {
+  color: #49505a;
+}
+
+.col-item .item-comments .fa {
+  font-size: 12px;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.col-item .item-comments .item-comments-count::after {
+  color: #49505a;
+  left: -40px;
+  opacity: 1;
+}
+
+.col-item .item-comments .item-comments-count:hover {
+  color: #49505a;
+}
+
+.col-item .item-comments .date {
+  display: inline-block;
+  margin-top: 0;
+}
+
+.col-item h4 {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.col-item .col-item-meta {
+  margin-bottom: 8px;
+  margin-top: 6px;
+}
+
+.col-item-dark a {
+  color: #a4a7ab;
+}
+
+.col-item-dark a:hover, .col-item-dark a.hover {
+  color: #fff;
+}
+
 /* -----------------------------------
 		Footer
 ----------------------------------- */
@@ -10611,6 +10683,14 @@ section h2 {
   .third-section {
     padding: 10px 0;
   }
+  .third-section {
+    padding: 10px 0 30px;
+  }
+  .third-section > div > div > div:last-of-type .col-item {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 767.98px) {
   .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
@@ -10628,6 +10708,21 @@ section h2 {
   }
   .item-news {
     margin: 10px 0 0;
+  }
+  .col-item {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .col-item-meta,
+  .col-item h4 {
+    padding: 0 20px;
+  }
+  .col-item a img {
+    margin-bottom: 10px;
+  }
+  .col-item .col-item-meta {
+    margin-bottom: 5px;
   }
 }
 @media (max-width: 575.98px) {

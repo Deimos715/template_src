@@ -30,4 +30,21 @@ $(function () {
 		$('.mobile-menu').stop().slideToggle();
 	});
 
+	// Обработка класса Hover
+	$('.col-item').hover(
+		function () {
+			const ths = $(this);
+			const lnk = ths.closest('.col-item').find('h4 a');
+			lnk.addClass('hover');
+
+			// сохраняем ссылку в DOM-элементе для доступа во втором колбэке
+			$(this).data('hover-link', lnk);
+		},
+		function () {
+			const lnk = $(this).data('hover-link');
+			if (lnk) lnk.removeClass('hover');
+		}
+	);
+
+
 });
