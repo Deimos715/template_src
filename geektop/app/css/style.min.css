@@ -10607,6 +10607,10 @@ section h2 {
   .item-title-content {
     padding: 40px 30px;
   }
+  .second-section,
+  .third-section {
+    padding: 10px 0;
+  }
 }
 @media (max-width: 767.98px) {
   .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
@@ -10614,12 +10618,16 @@ section h2 {
   }
   .first-section {
     padding-top: 10px;
+    padding-bottom: 10px;
   }
   .top-ad {
     margin-bottom: 10px;
   }
   .g-0 .pattern {
     margin-bottom: 10px;
+  }
+  .item-news {
+    margin: 10px 0 0;
   }
 }
 @media (max-width: 575.98px) {

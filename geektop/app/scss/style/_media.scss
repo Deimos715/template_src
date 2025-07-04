@@ -26,6 +26,11 @@
             padding: 40px 30px;
         }
     }
+
+    .second-section,
+    .third-section {
+        padding: calc($gutter / 2) 0;
+    }
 }
 
 // ≤768px — Горизонтальные телефоны и узкие планшеты
@@ -37,7 +42,10 @@
     }
 
     .first-section {
-        padding-top: calc($gutter / 2);
+        padding: {
+            top: calc($gutter / 2);
+            bottom: calc($gutter / 2);
+        }
     }
 
     .top-ad {
@@ -48,6 +56,10 @@
         .pattern {
             margin-bottom: calc($gutter / 2);
         }
+    }
+
+    .item-news {
+        margin: calc($gutter / 2) 0 0;
     }
 }
 
