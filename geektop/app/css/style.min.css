@@ -10658,6 +10658,108 @@ section h2 {
   color: #fff;
 }
 
+.fourth-section {
+  background-color: #f5f5f5;
+  padding-top: 30px;
+}
+
+.fourth-section-header {
+  margin-bottom: 10px;
+}
+
+.fourth-section .item-title {
+  min-height: 300px;
+}
+
+.fourth-section .item-title .date {
+  display: inline-block;
+  margin-left: 10px;
+  color: #fff;
+}
+
+.fourth-section .item-social {
+  margin-top: 1px;
+}
+
+.type-one-header {
+  margin-bottom: 10px;
+}
+
+.type-one-first > div > a {
+  display: block;
+}
+
+.type-one-first .item-social {
+  margin-top: 8px;
+}
+
+.type-one-first .item-social a,
+.type-one-first .item-social .item-comments,
+.type-one-first .item-social .date {
+  color: #a0a0a0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.type-one-first .item-social .item-comments-count {
+  font-size: 12px;
+}
+
+.type-one-first .item-social .date {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.type-one-first h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 8px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.type-one-first h3 a {
+  color: #333;
+  display: block;
+}
+
+.type-one-first h3:hover a {
+  color: #ec1c1c;
+}
+
+.type-one .pattern {
+  margin-bottom: 20px;
+}
+
+.type-one .pattern:last-child {
+  margin-bottom: 0;
+}
+
+.item-title-white .date {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.item-title-white .item-comments-count {
+  font-size: 12px;
+}
+
+.item-title-white .item-social {
+  margin-top: 0;
+}
+
+.item-title-white .item-title {
+  min-height: 230px;
+}
+
+.item-title-white .item-title-content {
+  padding: 40px 40px 25px;
+}
+
 /* -----------------------------------
 		Footer
 ----------------------------------- */
@@ -10721,6 +10823,9 @@ section h2 {
   .col-item .col-item-meta {
     margin-bottom: 5px;
   }
+  .type-one .pattern {
+    margin-bottom: 10px;
+  }
 }
 @media (max-width: 575.98px) {
   .logo {
@@ -10729,6 +10834,9 @@ section h2 {
   }
   .search-wrap .search {
     padding-right: 10px;
+  }
+  .fourth-section {
+    padding: 13.3333333333px 0;
   }
 }
 /*==========  Mobile First (от меньшего к большему) ==========*/

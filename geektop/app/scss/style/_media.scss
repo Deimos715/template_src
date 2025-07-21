@@ -101,6 +101,12 @@
     //         margin-top: 12px;
     //     }
     // }
+
+    .type-one {
+        .pattern {
+            margin-bottom: calc($gutter / 2);
+        }
+    }
 }
 
 // ≤576px — Вертикальные телефоны
@@ -116,6 +122,10 @@
         .search {
             padding-right: calc($gutter / 2);
         }
+    }
+
+    .fourth-section {
+        padding: calc($gutter / 1.5) 0;
     }
 }
 
