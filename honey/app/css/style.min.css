@@ -8871,6 +8871,10 @@ a button:focus-visible {
   cursor: pointer;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   max-width: 1600px;
   padding: 0 50px;
@@ -8904,6 +8908,57 @@ a button:focus-visible {
 }
 .menu__link--active {
   font-weight: 700;
+}
+
+.header__inner {
+  padding-left: 177px;
+  padding-top: 182px;
+  min-height: 865px;
+  margin-bottom: 130px;
+  background-image: url(../images/Background.webp);
+}
+.header__title {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+}
+.header__title span {
+  margin-bottom: 10px;
+}
+.header__title span:nth-child(2) {
+  padding-left: 98px;
+}
+.header__title span:nth-child(3) {
+  margin-bottom: 70px;
+  padding-left: 294px;
+}
+
+.button {
+  font-weight: 700;
+  height: 65px;
+  padding: 18px 50px;
+  line-height: 1.6;
+  background-color: transparent;
+  border: 2px solid #000;
+}
+
+.header .button {
+  margin-right: 30px;
+}
+.header .button:last-child {
+  margin-right: 0;
+}
+.header .button--active {
+  background-color: #000;
+  color: #fff;
 }
 
 /* -----------------------------------

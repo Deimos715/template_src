@@ -25,3 +25,59 @@
 		}
 	}
 }
+
+.header {
+	&__inner {
+		padding-left: 177px;
+		padding-top: 182px;
+		min-height: 865px;
+		margin-bottom: 130px;
+		background-image: url(../images/Background.webp);
+	}
+	
+	&__title {
+		font-size: 100px;
+		font-weight: 700;
+		line-height: 130px;
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+
+		span {
+			margin-bottom: 10px;
+		}
+
+		span:nth-child(2) {
+			padding-left: 98px;
+		}
+
+		span:nth-child(3) {
+			margin-bottom: 70px;
+			padding-left: 294px;
+		}
+	}
+}
+
+.button {
+	font-weight: 700;
+	height: 65px;
+	padding: 18px 50px;
+	line-height: 1.6;
+	// Прозрачный цвет заливки
+	background-color: transparent; 
+	border: 2px solid $main-text-color;
+	
+}
+
+.header .button {
+	margin-right: 30px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&--active {
+		background-color: $main-text-color;
+		color: $second-text-color;
+	}
+}

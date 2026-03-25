@@ -89,7 +89,11 @@ a {
         outline: 2px solid $accent-color;
         outline-offset: 3px;
         cursor: pointer;
-    }
+    } 
+}
+
+button {
+    cursor: pointer;
 }
 
 .container {
